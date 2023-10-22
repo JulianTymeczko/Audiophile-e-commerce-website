@@ -1,0 +1,15 @@
+:root {
+  /* colors */
+  --dark-orange: rgb(216, 125, 74);
+  --light-orange: rgb(251, 175, 133);
+  --black: rgb(16, 16, 16);
+  --dark-black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --dark-grey: rgb(241, 241, 241);
+  --light-grey: rgb(250, 250, 250);
+
+  /* Typography */
+}
+h1 {
+  color: var(--dark-orange);
+}
