@@ -39,3 +39,69 @@
 }
 
 /* TextForm */
+.text-form input {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  margin: 50px;
+  width: max-content;
+  padding: 20px 150px 20px 15px;
+}
+.text-form label {
+}
+/* RadioForm */
+
+.radio-form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  margin: 50px;
+  width: max-content;
+  padding: 20px 150px 20px 15px;
+}
+
+/* CounterForm */
+.counter-form {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--dark-grey);
+  width: max-content;
+  justify-content: space-between;
+  padding: 0px 15px;
+  height: 48px;
+  width: 120px;
+  max-width: 300px;
+}
+.counter-form button {
+  background-color: transparent;
+  border: none;
+  opacity: 0.35;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.counter-form button:hover {
+  color: var(--dark-orange);
+  cursor: pointer;
+}
+.counter-form input {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  width: 10px;
+  max-width: 40px;
+  flex-grow: 1;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

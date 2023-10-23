@@ -16,7 +16,8 @@ function Nav() {
       ></Button>
       <Button buttonText="SEE PRODUCT" buttonNumber="two"></Button>
       <Button buttonText="SEE PRODUCT" buttonNumber="three"></Button>
-
+      <CounterForm></CounterForm>
+      <TextForm></TextForm>
       <RadioForm labelText="see you there"></RadioForm>
     </>
   );
