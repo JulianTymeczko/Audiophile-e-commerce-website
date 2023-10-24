@@ -1,9 +1,10 @@
 import "./form.css";
-export default function RadioForm({ labelText }) {
+export default function RadioForm({ labelText, groupName, inputID }) {
   return (
-    <form className="radio-form">
-      <input type="radio" />
-      <label>{labelText}</label>
-    </form>
+    <label htmlFor={inputID} className="radio-form">
+      <input type="radio" name={groupName} id={inputID} placeholder="s" />
+      <span></span>
+      {labelText}
+    </label>
   );
 }
