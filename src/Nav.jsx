@@ -18,6 +18,11 @@ function Nav() {
       <Button buttonText="SEE PRODUCT" buttonNumber="three"></Button>
       <CounterForm></CounterForm>
       <TextForm labelText="Name" inputPlaceholder="Insert your name"></TextForm>
+      <TextForm
+        labelText="Name"
+        inputPlaceholder="Insert your name"
+        typeOfTest="name"
+      ></TextForm>
       <RadioForm labelText="see you there" groupName="my-group" inputID="one" />
     </>
   );

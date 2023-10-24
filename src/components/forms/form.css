@@ -48,7 +48,7 @@
   gap: 20px;
   align-items: center;
   border-radius: 8px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid var(--dark-orange);
   background: #fff;
   margin-top: 15px;
   width: max-content;
@@ -56,6 +56,15 @@
   caret-color: var(--dark-orange);
   font-weight: 700;
   font-size: var(--body-size);
+}
+.text-form input[value=""] {
+  border: 1px solid #cfcfcf;
+}
+.text-form input:hover {
+  cursor: pointer;
+}
+.text-form input:focus {
+  outline: 1px solid var(--dark-orange);
 }
 .text-form input::placeholder {
   caret-color: var(--dark-orange);
@@ -68,6 +77,11 @@
   font-weight: 700;
 }
 
+/* Text-Error */
+
+.text-error label {
+  color: rgba(205, 44, 44, 1);
+}
 /* RadioForm */
 
 .radio-form {
