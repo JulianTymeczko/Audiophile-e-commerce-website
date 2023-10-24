@@ -29,23 +29,23 @@ function eMoneyPINTest(inputValue) {
 }
 
 export default function formTests(typeOfTest, inputValue) {
-  if (typeOfTest == "name") {
+  if (typeOfTest == "Name") {
     return nameTest(inputValue);
-  } else if (typeOfTest == "email") {
+  } else if (typeOfTest == "Email Address") {
     return emailTest(inputValue);
-  } else if (typeOfTest == "phoneNumber") {
+  } else if (typeOfTest == "Phone Number") {
     return phoneTest(inputValue);
-  } else if (typeOfTest == "address") {
+  } else if (typeOfTest == "Address") {
     return addressTest(inputValue);
-  } else if (typeOfTest == "zipCode") {
+  } else if (typeOfTest == "ZIP Code") {
     return zipCodeTest(inputValue);
-  } else if (typeOfTest == "city") {
+  } else if (typeOfTest == "City") {
     return nameTest(inputValue);
-  } else if (typeOfTest == "country") {
+  } else if (typeOfTest == "Country") {
     return nameTest(inputValue);
-  } else if (typeOfTest == "e-Money-Number") {
+  } else if (typeOfTest == "e-Money Number") {
     return eMoneyNumberTest(inputValue);
-  } else if (typeOfTest == "e-Money-PIN") {
+  } else if (typeOfTest == "e-Money PIN") {
     return eMoneyPINTest(inputValue);
   }
 }

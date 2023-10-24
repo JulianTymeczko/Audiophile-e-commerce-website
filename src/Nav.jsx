@@ -17,12 +17,21 @@ function Nav() {
       <Button buttonText="SEE PRODUCT" buttonNumber="two"></Button>
       <Button buttonText="SEE PRODUCT" buttonNumber="three"></Button>
       <CounterForm></CounterForm>
+
       <TextForm labelText="Name" inputPlaceholder="Insert your name"></TextForm>
       <TextForm
-        labelText="Name"
+        labelText="Email Address"
         inputPlaceholder="Insert your name"
-        typeOfTest="name"
       ></TextForm>
+      <TextForm
+        labelText="ZIP Code"
+        inputPlaceholder="Insert your name"
+      ></TextForm>
+      <TextForm
+        labelText="Phone Number"
+        inputPlaceholder="Insert your name"
+      ></TextForm>
+
       <RadioForm labelText="see you there" groupName="my-group" inputID="one" />
     </>
   );

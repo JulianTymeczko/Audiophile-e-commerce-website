@@ -76,11 +76,26 @@
   font-size: var(--overline-size);
   font-weight: 700;
 }
-
+.text-form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text-form span {
+  display: none;
+}
 /* Text-Error */
-
+.text-error input {
+  border: 2px solid rgba(205, 44, 44, 1);
+}
 .text-error label {
   color: rgba(205, 44, 44, 1);
+}
+.text-error span {
+  color: rgba(205, 44, 44, 1);
+  display: initial;
+  font-size: var(--overline-size);
+  font-weight: 700;
 }
 /* RadioForm */
 
