@@ -4,14 +4,27 @@ import TextForm from "./components/forms/TextForm";
 import RadioForm from "./components/forms/RadioForm";
 import CounterForm from "./components/forms/CounterForm";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 function Nav() {
+  const [animate, setAnimate] = useState("");
   const onClickFunc = () => {
     alert("hey there");
   };
   return (
     <>
       <nav>
-        <button type="button" className="hamburger-button">
+        <button
+          type="button"
+          className="hamburger-button"
+          onClick={() => {
+            if (animate == "") {
+              setAnimate("animate-menu");
+            } else if (animate != "") {
+              setAnimate("");
+            }
+          }}
+        >
           <img src="/assets/shared/tablet/icon-hamburger.svg" alt="" />
         </button>
         <Link to="/" className="logo">
@@ -27,7 +40,7 @@ function Nav() {
         <button type="button" className="cart-button">
           <img src="/assets/shared/desktop/icon-cart.svg" alt="" />
         </button>
-        <div className="mobile-menu">
+        <div className={`mobile-menu ${animate}`}>
           <div>
             <div className="item-types">
               <img
