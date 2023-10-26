@@ -27,9 +27,52 @@ function Nav() {
         <button type="button" className="cart-button">
           <img src="/assets/shared/desktop/icon-cart.svg" alt="" />
         </button>
+        <div className="mobile-menu">
+          <div>
+            <div className="item-types">
+              <img
+                src="\assets\shared\tablet\headp.svg"
+                alt=""
+                className="mobile-menu-img"
+              />
+              <div className="box-shadow"></div>
+              <h6>HEADPHONES</h6>
+              <Link>
+                {" "}
+                <Button buttonText="SHOP" buttonNumber="three"></Button>
+              </Link>
+            </div>
+            <div className="item-types">
+              <img
+                src="\assets\shared\tablet\awfdawd.svg"
+                alt=""
+                className="mobile-menu-img"
+              />
+              <div className="box-shadow"></div>
+              <h6>SPEAKERS</h6>
+              <Link>
+                {" "}
+                <Button buttonText="SHOP" buttonNumber="three"></Button>
+              </Link>
+            </div>
+            <div className="item-types">
+              <img
+                src="\assets\shared\tablet\image-removebg-preview(42).png"
+                alt=""
+                className="mobile-menu-img"
+              />
+              <div className="box-shadow"></div>
+              <h6>EARPHONES</h6>
+              <Link>
+                {" "}
+                <Button buttonText="SHOP" buttonNumber="three"></Button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </nav>
 
-      <Button
+      {/* <Button
         buttonText="SEE PRODUCT"
         buttonNumber="one"
         onClickFunc={onClickFunc}
@@ -52,7 +95,7 @@ function Nav() {
         inputPlaceholder="Insert your name"
       ></TextForm>
 
-      <RadioForm labelText="see you there" groupName="my-group" inputID="one" />
+      <RadioForm labelText="see you there" groupName="my-group" inputID="one" /> */}
     </>
   );
 }
