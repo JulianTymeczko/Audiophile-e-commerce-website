@@ -36,7 +36,66 @@
   --subTitle-letter-spacing: 1px;
   --body-size: 15px;
   --body-line-height: 25px;
+  --left-right-body-gutter: 10%;
 }
-h1 {
+
+nav {
+  background-color: var(--dark-black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-middle {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.nav-middle a {
+  font-size: var(--overline-size);
+  color: var(--white);
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.nav-middle a:hover {
   color: var(--dark-orange);
+  cursor: pointer;
+}
+.cart-button {
+  background-color: transparent;
+  border: none;
+}
+.cart-button:hover {
+  cursor: pointer;
+}
+.hamburger-button {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+.hamburger-button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .nav-middle {
+    display: none;
+  }
+  .logo {
+    margin-left: -55%;
+  }
+  .hamburger-button {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-middle {
+    display: none;
+  }
+  .hamburger-button {
+    display: inline-block;
+  }
 }
