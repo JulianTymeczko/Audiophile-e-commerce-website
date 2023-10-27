@@ -4,23 +4,27 @@ import TextForm from "./components/forms/TextForm";
 import RadioForm from "./components/forms/RadioForm";
 import CounterForm from "./components/forms/CounterForm";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Nav() {
   const [animate, setAnimate] = useState("");
   const onClickFunc = () => {
     alert("hey there");
   };
+  const [mask, setMask] = useState("");
   return (
     <>
+      <div className={`${mask}`}></div>
       <nav>
         <button
           type="button"
           className="hamburger-button"
           onClick={() => {
             if (animate == "") {
+              setMask("black-mask-nav");
               setAnimate("animate-menu");
             } else if (animate != "") {
+              setMask("");
               setAnimate("");
             }
           }}
