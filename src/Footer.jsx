@@ -7,7 +7,7 @@ function Footer() {
         <section className="left-footer">
           <div className="orange-line"></div>
           <div>
-            <Link>
+            <Link style={{ width: "max-content" }}>
               <img src="/assets/shared/desktop/logo.svg" alt="" />
             </Link>
             <div className="footer-links hidden-desk">
