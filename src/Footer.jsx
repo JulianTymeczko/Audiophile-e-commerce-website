@@ -10,7 +10,7 @@ function Footer() {
             <Link>
               <img src="/assets/shared/desktop/logo.svg" alt="" />
             </Link>
-            <div className="footer-links">
+            <div className="footer-links hidden-desk">
               {" "}
               <Link>HOME</Link>
               <Link>HEADPHONES</Link>
