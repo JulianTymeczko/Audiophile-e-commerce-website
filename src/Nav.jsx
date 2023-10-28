@@ -5,21 +5,28 @@ import RadioForm from "./components/forms/RadioForm";
 import CounterForm from "./components/forms/CounterForm";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Cart from "./components/cart/Cart";
 
 function Nav() {
   const [animate, setAnimate] = useState("");
   const onClickFunc = () => {
     alert("hey there");
   };
+
   const [mask, setMask] = useState("");
+  const [showCart, setShowCart] = useState("");
+  const [cartMask, setCartMask] = useState("");
   return (
     <>
       <div className={`${mask}`}></div>
+      <div className={`${cartMask}`}></div>
       <nav>
         <button
           type="button"
           className="hamburger-button"
           onClick={() => {
+            setShowCart("");
+            setCartMask("");
             if (animate == "") {
               setMask("black-mask-nav");
               setAnimate("animate-menu");
@@ -41,7 +48,21 @@ function Nav() {
           <Link to="/speakers">SPEAKERS</Link>
           <Link to="/earphones">EARPHONES</Link>
         </div>
-        <button type="button" className="cart-button">
+        <button
+          type="button"
+          className="cart-button"
+          onClick={() => {
+            setAnimate("");
+            setMask("");
+            if (showCart == "") {
+              setShowCart("show-cart");
+              setCartMask("cart-mask");
+            } else if (showCart != "") {
+              setShowCart("");
+              setCartMask("");
+            }
+          }}
+        >
           <img src="/assets/shared/desktop/icon-cart.svg" alt="" />
         </button>
         <div className={`mobile-menu ${animate}`}>
@@ -87,6 +108,7 @@ function Nav() {
             </div>
           </div>
         </div>
+        <Cart showCart={showCart}></Cart>
       </nav>
 
       {/* <Button
