@@ -7,6 +7,12 @@ export default function OrangeSpeakers() {
         <img
           src="\assets\home\desktop\image-speaker-zx9.png"
           alt="image of a speaker"
+          className="desktop-image"
+        />
+        <img
+          src="\assets\home\tablet\image-speaker-zx9.png"
+          alt=""
+          className="tablet-image"
         />
         <div className="first-circle shared-circle"></div>
         <div className="second-circle shared-circle"></div>
