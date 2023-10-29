@@ -40,7 +40,7 @@
 }
 
 nav {
-  background-color: var(--dark-black);
+  background-color: var(--black);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
