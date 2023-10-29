@@ -170,4 +170,49 @@
   .mobile-image {
     display: initial !important;
   }
+  .orange-speaker {
+    padding: 15px 0px;
+
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    overflow: hidden;
+  }
+  .orange-speaker img {
+    width: 172.248px;
+    height: 207px;
+  }
+  .inner-div-orange {
+    text-align: center;
+    align-items: center;
+    gap: 35px;
+    transform: none;
+  }
+
+  .first-circle {
+    top: -20px;
+    left: -54px;
+    width: 279px;
+    height: 279px;
+  }
+  .second-circle {
+    top: -20px;
+    left: -54px;
+    width: 279px;
+    height: 279px;
+  }
+  .third-circle {
+    top: -20px;
+    left: -54px;
+    width: 279px;
+    height: 279px;
+  }
+  .inner-div-orange h1 {
+    line-height: 40px;
+    font-size: 36px;
+    letter-spacing: 1.286px;
+  }
+  .inner-div-orange p br {
+    display: none;
+  }
 }

@@ -14,6 +14,11 @@ export default function OrangeSpeakers() {
           alt=""
           className="tablet-image"
         />
+        <img
+          src="\assets\home\mobile\image-speaker-zx9.png"
+          alt=""
+          className="mobile-image"
+        />
         <div className="first-circle shared-circle"></div>
         <div className="second-circle shared-circle"></div>
         <div className="third-circle shared-circle"></div>
