@@ -48,6 +48,7 @@
   transform: translateY(100%);
   right: var(--left-right-body-gutter);
   display: none;
+  z-index: 5;
 }
 .show-cart {
   display: initial;

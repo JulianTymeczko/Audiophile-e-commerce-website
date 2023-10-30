@@ -3,6 +3,11 @@ import Button from "../buttons/Button";
 export default function HomeHeader() {
   return (
     <header className="home-header">
+      {/* <img
+        src="\assets\home\tablet\image-header.jpg"
+        alt=""
+        className="tablet-image home-header-tablet-image"
+      /> */}
       <div className="left-home-header">
         <h6>NEW PRODUCT</h6>
         <h1>
@@ -19,8 +24,12 @@ export default function HomeHeader() {
           //   onClickFunc={onClickFunc}
         ></Button>
       </div>
-      <div className="right-home-header">
-        <img src="/assets/home/desktop/header-headphones.svg" alt="" />
+      <div className="right-home-header desktop-image">
+        <img
+          src="/assets/home/desktop/header-headphones.svg"
+          alt=""
+          className="desktop-image"
+        />
       </div>
     </header>
   );

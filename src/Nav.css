@@ -45,7 +45,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px var(--left-right-body-gutter);
 
   position: relative;
 }
@@ -56,6 +56,7 @@ nav > a {
   display: flex;
   flex-direction: row;
   gap: 25px;
+  transform: translateX(-45px);
   z-index: 5;
 }
 .nav-middle a {
@@ -164,6 +165,17 @@ nav > a {
   display: none;
   left: 0px;
   z-index: 3;
+}
+.grey-line {
+  z-index: 4;
+  width: calc(100% - calc(2 * var(--left-right-body-gutter)));
+  position: absolute;
+  height: 1px;
+  background-color: var(--white);
+  opacity: 0.2;
+  left: var(--left-right-body-gutter);
+
+  bottom: 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .nav-middle {

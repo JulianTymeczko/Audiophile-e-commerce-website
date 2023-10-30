@@ -16,6 +16,13 @@ function Nav() {
   const [mask, setMask] = useState("");
   const [showCart, setShowCart] = useState("");
   const [cartMask, setCartMask] = useState("");
+  useEffect(() => {
+    if (cartMask !== "" || mask !== "") {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [cartMask, mask]);
   return (
     <>
       <div className={`${mask}`}></div>
@@ -109,6 +116,7 @@ function Nav() {
           </div>
         </div>
         <Cart showCart={showCart}></Cart>
+        <div className="grey-line"></div>
       </nav>
 
       {/* <Button
