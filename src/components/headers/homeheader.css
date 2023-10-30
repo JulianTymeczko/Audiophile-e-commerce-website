@@ -76,3 +76,15 @@
 .home-header p {
   width: 80%;
 }
+.right-home-header {
+  --remove-bottom: 87px;
+  position: relative;
+  height: calc(729px - var(--remove-bottom));
+  width: 100%;
+  align-self: flex-start;
+}
+.right-home-header img {
+  position: absolute;
+  top: calc(var(--remove-bottom) * -1);
+  left: 30px;
+}
