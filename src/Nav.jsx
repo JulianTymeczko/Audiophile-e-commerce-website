@@ -82,7 +82,7 @@ function Nav() {
               />
               <div className="box-shadow"></div>
               <h6>HEADPHONES</h6>
-              <Link>
+              <Link to="/headphones">
                 {" "}
                 <Button buttonText="SHOP" buttonNumber="three"></Button>
               </Link>
@@ -95,7 +95,7 @@ function Nav() {
               />
               <div className="box-shadow"></div>
               <h6>SPEAKERS</h6>
-              <Link>
+              <Link to="/speakers">
                 {" "}
                 <Button buttonText="SHOP" buttonNumber="three"></Button>
               </Link>
@@ -108,7 +108,7 @@ function Nav() {
               />
               <div className="box-shadow"></div>
               <h6>EARPHONES</h6>
-              <Link>
+              <Link to="/earphones">
                 {" "}
                 <Button buttonText="SHOP" buttonNumber="three"></Button>
               </Link>

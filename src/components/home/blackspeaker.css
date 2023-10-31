@@ -105,7 +105,7 @@
 }
 @media screen and (max-width: 767px) {
   :root {
-    --left-right-body-gutter: 3% !important;
+    --left-right-body-gutter: 6% !important;
   }
   .top-black-speaker {
     background-image: url(/assets/home/mobile/image-speaker-zx7.jpg);

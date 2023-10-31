@@ -95,7 +95,7 @@
 
   .home-header {
     justify-content: center;
-    height: 680px;
+    height: 593px;
   }
 
   .left-home-header {
@@ -113,7 +113,8 @@
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 100%;
+    height: 680px;
+
     z-index: 1;
   }
   .right-home-header {
@@ -123,7 +124,7 @@
 @media screen and (max-width: 767px) {
   .home-header {
     justify-content: center;
-    height: 500px;
+    height: 530px;
   }
 
   .left-home-header {
@@ -131,7 +132,7 @@
     text-align: center;
     gap: 20px;
     z-index: 2;
-    transform: none;
+    transform: translateY(-15px);
   }
 
   .mask-header-img {
@@ -139,7 +140,7 @@
     left: 0px;
     top: 0px;
     width: 100%;
-    height: initial;
+    height: 613px;
     z-index: 1;
   }
   .right-home-header {

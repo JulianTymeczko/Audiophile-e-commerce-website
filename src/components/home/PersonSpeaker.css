@@ -1,0 +1,108 @@
+:root {
+  /* colors */
+  --dark-orange: rgb(216, 125, 74);
+  --light-orange: rgb(251, 175, 133);
+  --black: rgb(16, 16, 16);
+  --dark-black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --dark-grey: rgb(241, 241, 241);
+  --light-grey: rgb(250, 250, 250);
+
+  /* Typography */
+
+  --h1-size: 56px;
+  --h1-line-height: 58px;
+  --h1-letter-spacing: 2px;
+  --h2-size: 40px;
+  --h2-line-height: 44px;
+  --h2-letter-spacing: 1.5px;
+  --h3-size: 32px;
+  --h3-line-height: 36px;
+  --h3-letter-spacing: 1.15px;
+  --h4-size: 28px;
+  --h4-line-height: 38px;
+  --h4-letter-spacing: 2px;
+  --h5-size: 24px;
+  --h5-line-height: 33px;
+  --h5-letter-spacing: 1.7px;
+  --h6-size: 18px;
+  --h6-line-height: 24px;
+  --h6-letter-spacing: 1.3px;
+  --overline-size: 14px;
+  --overline-line-height: 19px;
+  --overline-letter-spacing: 10px;
+  --subTitle-size: 13px;
+  --subTitle-line-height: 25px;
+  --subTitle-letter-spacing: 1px;
+  --body-size: 15px;
+  --body-line-height: 25px;
+  --left-right-body-gutter: 10%;
+}
+.person-speaker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.person-speaker > div {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.person-speaker > div h2 {
+  font-size: var(--h2-size);
+  letter-spacing: var(--h2-letter-spacing);
+  line-height: var(--h2-line-height);
+  color: var(--dark-black);
+}
+.person-speaker > div span {
+  color: var(--dark-orange);
+}
+.person-speaker > div p {
+  font-size: var(--body-size);
+  line-height: var(--body-line-height);
+  color: var(--dark-black);
+  opacity: 0.5;
+  width: 75%;
+}
+.person-speaker img {
+  border-radius: 8px;
+}
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+  .person-speaker {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .person-speaker > div {
+    align-items: center;
+    text-align: center;
+  }
+  .person-speaker > div p {
+    width: 85%;
+  }
+  .person-speaker > div br {
+    display: none;
+  }
+  .person-speaker > div h2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .person-speaker {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .person-speaker > div {
+    align-items: center;
+    text-align: center;
+  }
+  .person-speaker > div p {
+    width: 100%;
+  }
+
+  .person-speaker > div h2 {
+    font-size: var(--h4-size);
+    line-height: var(--h4-line-height);
+    letter-spacing: var(--h4-letter-spacing);
+  }
+}

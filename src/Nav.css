@@ -206,11 +206,30 @@ nav > a {
   }
   .mobile-menu {
     display: flex;
+    transform: translateY(-30%);
+    height: max-content;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.5, 1, 0.9, 1);
+  }
+
+  .mobile-menu > div {
+    flex-direction: column;
+    gap: 70px;
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
   .mobile-menu.animate-menu {
     transform: translateY(100%);
   }
   .black-mask-nav {
     display: initial;
+  }
+  .grey-line {
+    width: 100%;
+    transform: none;
+    left: 0px;
+  }
+  body {
+    overflow: auto !important;
   }
 }

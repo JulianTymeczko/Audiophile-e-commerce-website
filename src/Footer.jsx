@@ -7,15 +7,15 @@ function Footer() {
         <section className="left-footer">
           <div className="orange-line"></div>
           <div>
-            <Link style={{ width: "max-content" }}>
+            <Link style={{ width: "max-content" }} to="/">
               <img src="/assets/shared/desktop/logo.svg" alt="" />
             </Link>
             <div className="footer-links hidden-desk">
               {" "}
-              <Link>HOME</Link>
-              <Link>HEADPHONES</Link>
-              <Link>SPEAKERS</Link>
-              <Link>EARPHONES</Link>
+              <Link to="/">HOME</Link>
+              <Link to="/headphones">HEADPHONES</Link>
+              <Link to="/speakers">SPEAKERS</Link>
+              <Link to="/earphones">EARPHONES</Link>
             </div>
             <p>
               {" "}
@@ -58,10 +58,10 @@ function Footer() {
         </section>
         <section className="right-footer">
           <div className="footer-links">
-            <Link>HOME</Link>
-            <Link>HEADPHONES</Link>
-            <Link>SPEAKERS</Link>
-            <Link>EARPHONES</Link>
+            <Link to="/home">HOME</Link>
+            <Link to="/headphones">HEADPHONES</Link>
+            <Link to="/speakers">SPEAKERS</Link>
+            <Link to="/earphones">EARPHONES</Link>
           </div>
           <div className="social-media-icons">
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">

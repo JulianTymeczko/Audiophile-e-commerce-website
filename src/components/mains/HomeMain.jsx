@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "../buttons/Button";
 import OrangeSpeakers from "../home/OrangeSpeakers";
 import BlackSpeaker from "../home/BlackSpeaker";
+import PersonSpeaker from "../home/PersonSpeaker";
 import "./HomeMain.css";
 export default function HomeMain() {
   return (
@@ -17,7 +18,7 @@ export default function HomeMain() {
             />
             <div className="box-shadow"></div>
             <h6>HEADPHONES</h6>
-            <Link>
+            <Link to="/headphones">
               {" "}
               <Button buttonText="SHOP" buttonNumber="three"></Button>
             </Link>
@@ -30,7 +31,7 @@ export default function HomeMain() {
             />
             <div className="box-shadow"></div>
             <h6>SPEAKERS</h6>
-            <Link>
+            <Link to="/speakers">
               {" "}
               <Button buttonText="SHOP" buttonNumber="three"></Button>
             </Link>
@@ -43,7 +44,7 @@ export default function HomeMain() {
             />
             <div className="box-shadow"></div>
             <h6>EARPHONES</h6>
-            <Link>
+            <Link to="/earphones">
               {" "}
               <Button buttonText="SHOP" buttonNumber="three"></Button>
             </Link>
@@ -53,6 +54,7 @@ export default function HomeMain() {
       <div className="home-main-second-section">
         <OrangeSpeakers></OrangeSpeakers>
         <BlackSpeaker></BlackSpeaker>
+        <PersonSpeaker></PersonSpeaker>
       </div>
     </main>
   );
