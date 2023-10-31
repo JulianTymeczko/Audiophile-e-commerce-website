@@ -24,11 +24,21 @@ export default function HomeHeader() {
           //   onClickFunc={onClickFunc}
         ></Button>
       </div>
-      <div className="right-home-header desktop-image">
+      <div className="right-home-header ">
         <img
           src="/assets/home/desktop/header-headphones.svg"
           alt=""
           className="desktop-image"
+        />
+        <img
+          src="\assets\home\tablet\image-header.jpg"
+          alt=""
+          className="tablet-image"
+        />
+        <img
+          src="\assets\home\mobile\image-header.jpg"
+          alt=""
+          className="mobile-image"
         />
       </div>
     </header>

@@ -71,7 +71,7 @@
 
 /* button Two */
 .shared-button.two {
-  background-color: var(--white);
+  background-color: transparent;
   border: 1.5px solid var(--dark-black);
 }
 .shared-button.two:hover {

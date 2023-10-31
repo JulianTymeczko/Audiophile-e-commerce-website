@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../buttons/Button";
 import OrangeSpeakers from "../home/OrangeSpeakers";
+import BlackSpeaker from "../home/BlackSpeaker";
 import "./HomeMain.css";
 export default function HomeMain() {
   return (
@@ -51,6 +52,7 @@ export default function HomeMain() {
       </div>
       <div className="home-main-second-section">
         <OrangeSpeakers></OrangeSpeakers>
+        <BlackSpeaker></BlackSpeaker>
       </div>
     </main>
   );
