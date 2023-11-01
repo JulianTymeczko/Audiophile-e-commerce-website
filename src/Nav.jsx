@@ -19,8 +19,14 @@ function Nav() {
   useEffect(() => {
     if (cartMask !== "" || mask !== "") {
       document.body.style.overflow = "hidden";
+      document.body.style.height = "1000px";
+      document.getElementById("root").style.height = "1000px";
+      document.getElementById("root").style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
+      document.getElementById("root").style.overflow = "auto";
+      document.body.style.height = "auto";
+      document.getElementById("root").style.height = "auto";
     }
   }, [cartMask, mask]);
   return (
