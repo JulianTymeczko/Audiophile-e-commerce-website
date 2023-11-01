@@ -37,6 +37,7 @@
   --body-size: 15px;
   --body-line-height: 25px;
   --left-right-body-gutter: 10%;
+  --left-padding-mobile: 4%;
 }
 .orange-speaker {
   background-color: var(--dark-orange);
@@ -50,7 +51,7 @@
   padding-top: 90px;
   padding-left: 5%;
   padding-right: 5%;
-
+  margin-bottom: 30px;
   z-index: -2;
 }
 .left-orange-div {
@@ -187,6 +188,7 @@
     align-items: center;
     gap: 35px;
     transform: none;
+    padding-left: var(--left-padding-mobile);
   }
 
   .first-circle {
@@ -214,5 +216,8 @@
   }
   .inner-div-orange p br {
     display: none;
+  }
+  .inner-div-orange p {
+    transform: translateX(-15px);
   }
 }

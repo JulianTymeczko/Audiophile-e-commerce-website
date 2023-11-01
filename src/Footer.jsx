@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer className="footer" style={{ marginTop: "150px" }}>
+      <footer className="footer">
         <section className="left-footer">
           <div className="orange-line"></div>
           <div>

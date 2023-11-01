@@ -14,18 +14,9 @@ export default function HomeMain() {
             <img
               src="\assets\home\desktop\image-removebg-preview(41).svg"
               alt=""
-              className="mobile-menu-img desktop-image"
+              className="mobile-menu-img "
             />
-            <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
-              alt=""
-              className="mobile-menu-img tablet-image"
-            />
-            <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
-              alt=""
-              className="mobile-menu-img mobile-image"
-            />
+
             <div className="box-shadow"></div>
             <h6>HEADPHONES</h6>
             <Link to="/headphones">
@@ -37,17 +28,7 @@ export default function HomeMain() {
             <img
               src="\assets\home\desktop\image-removebg-preview(38).svg"
               alt=""
-              className="mobile-menu-img desktop-image"
-            />
-            <img
-              src="\assets\shared\tablet\image-zx9-speaker.jpg"
-              alt=""
-              className="mobile-menu-img tablet-image"
-            />
-            <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
-              alt=""
-              className="mobile-menu-img mobile-image"
+              className="mobile-menu-img "
             />
 
             <div className="box-shadow"></div>
@@ -61,18 +42,9 @@ export default function HomeMain() {
             <img
               src="\assets\home\desktop\image-removebg-preview(42).svg"
               alt=""
-              className="mobile-menu-img desktop-image"
+              className="mobile-menu-img"
             />
-            <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
-              alt=""
-              className="mobile-menu-img tablet-image"
-            />
-            <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
-              alt=""
-              className="mobile-menu-img mobile-image"
-            />
+
             <div className="box-shadow"></div>
             <h6>EARPHONES</h6>
             <Link to="/earphones">

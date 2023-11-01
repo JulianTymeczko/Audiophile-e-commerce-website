@@ -42,6 +42,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .person-speaker > div {
   align-self: center;
@@ -86,6 +87,9 @@
   .person-speaker > div h2 {
     width: 90%;
   }
+  .person-speaker {
+    margin-top: 100px;
+  }
 }
 @media screen and (max-width: 767px) {
   .person-speaker {
@@ -104,5 +108,8 @@
     font-size: var(--h4-size);
     line-height: var(--h4-line-height);
     letter-spacing: var(--h4-letter-spacing);
+  }
+  .person-speaker {
+    margin-top: 100px;
   }
 }

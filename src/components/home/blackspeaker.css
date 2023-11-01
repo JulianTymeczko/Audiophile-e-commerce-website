@@ -37,6 +37,7 @@
   --body-size: 15px;
   --body-line-height: 25px;
   --left-right-body-gutter: 10%;
+  --left-padding-mobile: 4%;
 }
 .top-black-speaker {
   background-image: url(/assets/home/desktop/image-speaker-zx7.jpg);
@@ -106,6 +107,7 @@
 @media screen and (max-width: 767px) {
   :root {
     --left-right-body-gutter: 6% !important;
+    --left-padding-mobile: 6% !important;
   }
   .top-black-speaker {
     background-image: url(/assets/home/mobile/image-speaker-zx7.jpg);
@@ -116,7 +118,10 @@
   }
   .bottom-black-speaker > div {
     height: 200px;
-    padding-left: 30px;
+    padding-left: var(--left-padding-mobile);
     padding-top: 50px;
+  }
+  .top-black-speaker > div {
+    left: var(--left-padding-mobile);
   }
 }
