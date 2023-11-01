@@ -63,3 +63,9 @@
   left: 0px;
   z-index: 3;
 }
+@media screen and (max-width: 767px) {
+  .div-cart {
+    width: calc(100% - calc(2 * var(--left-right-body-gutter)));
+    left: var(--left-right-body-gutter);
+  }
+}

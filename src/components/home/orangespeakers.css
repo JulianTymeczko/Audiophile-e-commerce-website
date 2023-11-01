@@ -189,6 +189,7 @@
     gap: 35px;
     transform: none;
     padding-left: var(--left-padding-mobile);
+    padding-right: var(--left-padding-mobile);
   }
 
   .first-circle {
@@ -218,6 +219,6 @@
     display: none;
   }
   .inner-div-orange p {
-    transform: translateX(-15px);
+    transform: translateX(-10px);
   }
 }
