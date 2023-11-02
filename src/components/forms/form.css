@@ -49,8 +49,8 @@
   border: 1px solid var(--dark-orange);
   background: #fff;
   margin-top: 15px;
-  width: max-content;
-  padding: 20px 150px 20px 15px;
+  width: 309px;
+  padding: 20px 30px 20px 15px;
   caret-color: var(--dark-orange);
   font-weight: 700;
   font-size: var(--body-size);
@@ -114,7 +114,7 @@
 }
 .radio-form:hover {
   cursor: pointer;
-  border-color: var(--dark-orange);
+  border-color: var(--dark-orange) !important;
 }
 label.radio-form {
   font-size: var(--body-size);
@@ -181,4 +181,8 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.payment-details-off {
+  display: none !important;
 }

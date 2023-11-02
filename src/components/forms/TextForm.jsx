@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import "./form.css";
 import formTests from "../../scripts/formTests";
-export default function TextForm({ inputPlaceholder, labelText }) {
+export default function TextForm({
+  inputPlaceholder,
+  labelText,
+  id,
+  paymentDetails,
+}) {
   const [value, setValue] = useState("");
   const [textError, setTextError] = useState("");
 
@@ -13,7 +18,7 @@ export default function TextForm({ inputPlaceholder, labelText }) {
     }
   }, [value]);
   return (
-    <form className={`text-form ${textError}`}>
+    <form className={`text-form ${textError} ${paymentDetails}`} id={id}>
       <div>
         <label>{labelText}</label>
         <span>Wrong Format</span>

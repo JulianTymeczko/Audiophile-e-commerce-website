@@ -1,0 +1,100 @@
+:root {
+  /* colors */
+  --dark-orange: rgb(216, 125, 74);
+  --light-orange: rgb(251, 175, 133);
+  --black: rgb(16, 16, 16);
+  --dark-black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --dark-grey: rgb(241, 241, 241);
+  --light-grey: rgb(250, 250, 250);
+
+  /* Typography */
+
+  --h1-size: 56px;
+  --h1-line-height: 58px;
+  --h1-letter-spacing: 2px;
+  --h2-size: 40px;
+  --h2-line-height: 44px;
+  --h2-letter-spacing: 1.5px;
+  --h3-size: 32px;
+  --h3-line-height: 36px;
+  --h3-letter-spacing: 1.15px;
+  --h4-size: 28px;
+  --h4-line-height: 38px;
+  --h4-letter-spacing: 2px;
+  --h5-size: 24px;
+  --h5-line-height: 33px;
+  --h5-letter-spacing: 1.7px;
+  --h6-size: 18px;
+  --h6-line-height: 24px;
+  --h6-letter-spacing: 1.3px;
+  --overline-size: 14px;
+  --overline-line-height: 19px;
+  --overline-letter-spacing: 10px;
+  --subTitle-size: 13px;
+  --subTitle-line-height: 25px;
+  --subTitle-letter-spacing: 1px;
+  --body-size: 15px;
+  --body-line-height: 25px;
+  --left-right-body-gutter: 10%;
+  --left-padding-mobile: 4%;
+}
+.checkout-page {
+  background-color: var(--dark-grey);
+  display: flex;
+  padding: 100px var(--left-right-body-gutter);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checkout-page > div {
+  background-color: var(--white);
+  border-radius: 8px;
+}
+.left-checkout-page > div {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.left-checkout-page {
+  width: 730px;
+  padding: 50px;
+}
+.left-checkout-page h1 {
+  font-size: var(--h3-size);
+  letter-spacing: var(--h3-letter-spacing);
+  color: var(--dark-black);
+  margin-bottom: 50px;
+}
+.billing-details > div,
+.shipping-info > div,
+.payment-details > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15px;
+  row-gap: 40px;
+}
+#address {
+  grid-column: span 2;
+}
+#address input {
+  width: 100%;
+}
+#payment-method {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#payment-method > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.billing-details > h3,
+.shipping-info > h3,
+.payment-details > h3 {
+  color: var(--dark-orange);
+  font-size: var(--subTitle-size);
+  letter-spacing: var(--subTitle-letter-spacing);
+  margin-bottom: 25px;
+}
