@@ -58,7 +58,7 @@ function Footer() {
         </section>
         <section className="right-footer">
           <div className="footer-links">
-            <Link to="/home">HOME</Link>
+            <Link to="/">HOME</Link>
             <Link to="/headphones">HEADPHONES</Link>
             <Link to="/speakers">SPEAKERS</Link>
             <Link to="/earphones">EARPHONES</Link>

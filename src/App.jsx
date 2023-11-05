@@ -4,6 +4,9 @@ import Footer from "./Footer";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Headphones from "./pages/Headphones";
+import Earphones from "./pages/Earphones";
+import Speakers from "./pages/Speakers";
 function App() {
   return (
     <>
@@ -25,6 +28,30 @@ function App() {
             element={
               <>
                 <Checkout />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/headphones"
+            element={
+              <>
+                <Headphones />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/speakers"
+            element={
+              <>
+                <Speakers />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/earphones"
+            element={
+              <>
+                <Earphones />
               </>
             }
           ></Route>

@@ -98,3 +98,65 @@
   letter-spacing: var(--subTitle-letter-spacing);
   margin-bottom: 25px;
 }
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+  .checkout-page {
+    flex-direction: column;
+  }
+  .left-checkout-page {
+    padding: 50px 25px;
+    width: 100%;
+  }
+  .left-checkout-page .text-form input {
+    width: 100%;
+  }
+  #payment-method {
+    gap: 15px;
+    justify-content: initial;
+  }
+  #payment-method h6 {
+    width: 100%;
+  }
+  #payment-method > div {
+    width: 100%;
+  }
+  #payment-method .radio-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .checkout-page {
+    flex-direction: column;
+  }
+  .left-checkout-page {
+    padding: 50px 25px;
+    width: 100%;
+  }
+  .left-checkout-page .text-form input {
+    width: 100%;
+  }
+  #payment-method {
+    gap: 15px;
+    justify-content: initial;
+  }
+  #payment-method h6 {
+    width: 100%;
+  }
+  #payment-method > div {
+    width: 100%;
+  }
+  #payment-method .radio-form {
+    width: 100%;
+  }
+  .billing-details > div,
+  .shipping-info > div,
+  .payment-details > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #payment-method {
+    flex-direction: column;
+    grid-column: span 1;
+  }
+  #address {
+    grid-column: span 1;
+  }
+}
