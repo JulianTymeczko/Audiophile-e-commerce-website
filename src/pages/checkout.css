@@ -42,7 +42,8 @@
 .checkout-page {
   background-color: var(--dark-grey);
   display: flex;
-  padding: 100px var(--left-right-body-gutter);
+  padding: 150px var(--left-right-body-gutter) 100px
+    var(--left-right-body-gutter);
   flex-direction: row;
   justify-content: space-between;
 }
@@ -101,6 +102,7 @@
 @media screen and (max-width: 1439px) and (min-width: 768px) {
   .checkout-page {
     flex-direction: column;
+    padding-top: 100px;
   }
   .left-checkout-page {
     padding: 50px 25px;
@@ -126,6 +128,7 @@
 @media screen and (max-width: 767px) {
   .checkout-page {
     flex-direction: column;
+    padding-top: 65px;
   }
   .left-checkout-page {
     padding: 50px 25px;

@@ -178,6 +178,22 @@ nav > a {
 
   bottom: 0px;
 }
+#GO-BACK {
+  position: absolute;
+  left: var(--left-right-body-gutter);
+  top: 150px;
+}
+#GO-BACK h6 {
+  font-size: 15px;
+  opacity: 0.65;
+}
+#GO-BACK button {
+  padding: 0px;
+}
+#GO-BACK img {
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .nav-middle {
     display: none;
@@ -197,8 +213,14 @@ nav > a {
   .black-mask-nav {
     display: initial;
   }
+  #GO-BACK {
+    top: 140px;
+  }
 }
 @media screen and (max-width: 767px) {
+  #GO-BACK {
+    top: 110px;
+  }
   .nav-middle {
     display: none;
   }

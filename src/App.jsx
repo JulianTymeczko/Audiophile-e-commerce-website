@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Headphones from "./pages/Headphones";
 import Earphones from "./pages/Earphones";
 import Speakers from "./pages/Speakers";
+import Product from "./pages/Product";
 function App() {
   return (
     <>
@@ -52,6 +53,14 @@ function App() {
             element={
               <>
                 <Earphones />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/:id"
+            element={
+              <>
+                <Product />
               </>
             }
           ></Route>

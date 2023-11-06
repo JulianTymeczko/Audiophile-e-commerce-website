@@ -1,17 +1,14 @@
 import "./Nav.css";
 import Button from "./components/buttons/Button";
-import TextForm from "./components/forms/TextForm";
-import RadioForm from "./components/forms/RadioForm";
-import CounterForm from "./components/forms/CounterForm";
+
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Cart from "./components/cart/Cart";
-
+import { useLocation } from "react-router-dom";
 function Nav() {
   const [animate, setAnimate] = useState("");
-  const onClickFunc = () => {
-    alert("hey there");
-  };
+
+  const location = useLocation();
 
   const [mask, setMask] = useState("");
   const [showCart, setShowCart] = useState("");
@@ -29,8 +26,21 @@ function Nav() {
       document.getElementById("root").style.height = "auto";
     }
   }, [cartMask, mask]);
+
   return (
     <>
+      {(location.pathname == "/checkout" ||
+        location.pathname == "/0" ||
+        location.pathname == "/1" ||
+        location.pathname == "/2" ||
+        location.pathname == "/3" ||
+        location.pathname == "/4" ||
+        location.pathname == "/5") && (
+        <div id="GO-BACK">
+          <Button buttonNumber="three" buttonText="Go Back"></Button>
+        </div>
+      )}
+
       <div className={`${mask}`}></div>
       <div className={`${cartMask}`}></div>
       <nav>
@@ -124,31 +134,6 @@ function Nav() {
         <Cart showCart={showCart}></Cart>
         <div className="grey-line"></div>
       </nav>
-
-      {/* <Button
-        buttonText="SEE PRODUCT"
-        buttonNumber="one"
-        onClickFunc={onClickFunc}
-      ></Button>
-      <Button buttonText="SEE PRODUCT" buttonNumber="two"></Button>
-      <Button buttonText="SEE PRODUCT" buttonNumber="three"></Button>
-      <CounterForm></CounterForm>
-
-      <TextForm labelText="Name" inputPlaceholder="Insert your name"></TextForm>
-      <TextForm
-        labelText="Email Address"
-        inputPlaceholder="Insert your name"
-      ></TextForm>
-      <TextForm
-        labelText="ZIP Code"
-        inputPlaceholder="Insert your name"
-      ></TextForm>
-      <TextForm
-        labelText="Phone Number"
-        inputPlaceholder="Insert your name"
-      ></TextForm>
-
-      <RadioForm labelText="see you there" groupName="my-group" inputID="one" /> */}
     </>
   );
 }
