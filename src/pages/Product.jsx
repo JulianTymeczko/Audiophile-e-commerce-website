@@ -5,6 +5,7 @@ import PersonSpeaker from "../components/home/PersonSpeaker";
 import { Link } from "react-router-dom";
 import Button from "../components/buttons/Button";
 import "./Product.css";
+import FeaturedSection from "../components/products/FeaturedSection";
 export default function Product() {
   let { id } = useParams();
 
@@ -19,6 +20,22 @@ export default function Product() {
         productTitle={data[id].name}
         productDescription={data[id].description}
       ></BuyProduct>
+      <FeaturedSection
+        features={data[id].features}
+        inTheBox={data[id].includes}
+        topLeftPictureD={data[id].gallery.first.desktop}
+        topLeftPictureT={data[id].gallery.first.tablet}
+        topLeftPictureM={data[id].gallery.first.mobile}
+        bottomLeftPictureD={data[id].gallery.second.desktop}
+        bottomLeftPictureT={data[id].gallery.second.tablet}
+        bottomLeftPictureM={data[id].gallery.second.mobile}
+        bigRightPictureD={data[id].gallery.third.desktop}
+        bigRightPictureT={data[id].gallery.third.tablet}
+        bigRightPictureM={data[id].gallery.third.mobile}
+        otherProductOne={data[id].others[0]}
+        otherProductTwo={data[id].others[1]}
+        otherProductThree={data[id].others[2]}
+      ></FeaturedSection>
       <div className="mobile-menu home-main-mobile-menu">
         <div>
           <div className="item-types">

@@ -39,63 +39,49 @@
   --left-right-body-gutter: 10%;
   --left-padding-mobile: 4%;
 }
-.normal-product button {
-  width: 160px;
+.featured-section-products > div:first-child {
+  display: flex;
+  flex-direction: row;
 }
-.normal-product img {
-  width: 540px;
-  height: 560px;
+.featured-section-products > div:first-child h2 {
+  color: var(--dark-black);
+  font-size: var(--h3-size);
+  letter-spacing: var(--h3-letter-spacing);
+  margin-bottom: 30px;
 }
-.normal-product.person-speaker p {
-  width: 100%;
+
+.featured-section-products > div:first-child p {
+  font-size: var(--body-size);
+  line-height: var(--body-line-height);
+  color: var(--dark-black);
+  opacity: 0.5;
+  white-space: pre-wrap;
+  width: 65%;
 }
-.normal-product.person-speaker > div > h6 {
-  font-size: var(--overline-size);
+.Features {
+  flex-basis: 65%;
+}
+.in-the-box {
+  flex-basis: 35%;
+}
+
+.featured-section-products > div:first-child li {
+  font-size: var(--body-size);
+  line-height: var(--body-line-height);
+  color: var(--dark-black);
+  opacity: 0.5;
+}
+.featured-section-products > div:first-child span {
   color: var(--dark-orange);
-  letter-spacing: var(--overline-letter-spacing);
-  font-weight: 400;
+  font-weight: 700;
+  font-size: var(--body-size);
 }
-.normal-product.person-speaker > div {
-  width: 445px;
+.featured-section-products ul {
+  gap: 15px;
 }
-.normal-product h2 {
-  width: min-content;
-}
-.amount-cart-div {
+.featured-section-products ul > div {
   display: flex;
   flex-direction: row;
   gap: 15px;
-}
-.product-zero {
-  width: 100% !important;
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .normal-product img {
-    width: auto;
-    height: auto;
-  }
-  .normal-product.person-speaker > div {
-    width: auto;
-  }
-  .normal-product.person-speaker h2 {
-    width: min-content;
-  }
-  .normal-product.person-speaker p {
-    width: 85%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .normal-product img {
-    width: auto;
-    height: auto;
-  }
-  .normal-product.person-speaker > div {
-    width: auto;
-  }
-  .normal-product.person-speaker h2 {
-    width: min-content;
-  }
-  .normal-product.person-speaker p {
-    width: auto;
-  }
+  align-items: center;
 }
