@@ -3,6 +3,8 @@ import Button from "../buttons/Button";
 import CounterForm from "../forms/CounterForm";
 import "./buyproduct.css";
 import { useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../App";
 export default function BuyProduct({
   tabletSrc,
   mobileSrc,
@@ -13,6 +15,7 @@ export default function BuyProduct({
   price,
 }) {
   let location = useLocation();
+  const { cart, setCart } = useContext(CartContext);
   return (
     <div className="person-speaker normal-product buy-product">
       <img src={tabletSrc} alt="" className="tablet-image" />
@@ -30,7 +33,18 @@ export default function BuyProduct({
         <h4>{`$${price}`}</h4>
         <div className="amount-cart-div">
           <CounterForm></CounterForm>
-          <Button buttonText="ADD TO CART" buttonNumber="one"></Button>
+          <Button
+            buttonText="ADD TO CART"
+            buttonNumber="one"
+            onClickFunc={() => {
+              setCart([
+                ...cart,
+                {
+                  price: price,
+                },
+              ]);
+            }}
+          ></Button>
         </div>
       </div>
     </div>
