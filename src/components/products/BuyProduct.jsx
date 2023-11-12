@@ -1,6 +1,7 @@
 import "./normalproduct.css";
 import Button from "../buttons/Button";
 import CounterForm from "../forms/CounterForm";
+import "./buyproduct.css";
 import { useLocation } from "react-router-dom";
 export default function BuyProduct({
   tabletSrc,
@@ -13,7 +14,7 @@ export default function BuyProduct({
 }) {
   let location = useLocation();
   return (
-    <div className="person-speaker normal-product">
+    <div className="person-speaker normal-product buy-product">
       <img src={tabletSrc} alt="" className="tablet-image" />
       <img src={mobileSrc} alt="" className="mobile-image" />
       <img src={desktopSrc} alt="" className="desktop-image" />

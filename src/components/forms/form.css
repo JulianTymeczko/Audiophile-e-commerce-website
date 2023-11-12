@@ -164,6 +164,7 @@ input[type="radio"]:checked + span::after {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
+  width: initial !important;
 }
 .counter-form button:hover {
   color: var(--dark-orange);

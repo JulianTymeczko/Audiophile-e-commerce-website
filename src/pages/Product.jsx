@@ -15,8 +15,8 @@ export default function Product() {
         price={data[id].price}
         newProduct={data[id].new}
         desktopSrc={data[id].image.desktop}
-        tabletSrcSrc={data[id].image.tablet}
-        mobileSrcSrc={data[id].image.mobile}
+        tabletSrc={data[id].image.tablet}
+        mobileSrc={data[id].image.mobile}
         productTitle={data[id].name}
         productDescription={data[id].description}
       ></BuyProduct>
