@@ -30,9 +30,9 @@ export default function Cart({ showCart }) {
           </div>
         </>
       ))}
-      <div>
+      <div className="cart-total">
         <h6>TOTAL</h6>
-        <h4></h4>
+        <h4>{`$12412`}</h4>
       </div>
       <Button buttonNumber="one" buttonText="CHECKOUT"></Button>
     </div>

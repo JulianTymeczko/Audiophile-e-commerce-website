@@ -19,6 +19,7 @@ export default function Product() {
         mobileSrc={data[id].image.mobile}
         productTitle={data[id].name}
         productDescription={data[id].description}
+        cartImage={`/assets/cart/image-${data[id].slug}.jpg`}
       ></BuyProduct>
       <FeaturedSection
         features={data[id].features}
@@ -35,6 +36,9 @@ export default function Product() {
         otherProductOne={data[id].others[0]}
         otherProductTwo={data[id].others[1]}
         otherProductThree={data[id].others[2]}
+        slugOne={data[id].others[0].slug}
+        slugTwo={data[id].others[1].slug}
+        slugThree={data[id].others[2].slug}
       ></FeaturedSection>
       <div className="mobile-menu home-main-mobile-menu">
         <div>

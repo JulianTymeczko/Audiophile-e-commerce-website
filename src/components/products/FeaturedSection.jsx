@@ -1,5 +1,6 @@
 import Button from "../buttons/Button";
 import "./featuredsection.css";
+import { useNavigate } from "react-router-dom";
 export default function FeaturedSection({
   features,
   inTheBox,
@@ -15,7 +16,11 @@ export default function FeaturedSection({
   otherProductOne,
   otherProductTwo,
   otherProductThree,
+  slugOne,
+  slugTwo,
+  slugThree,
 }) {
+  let navigate = useNavigate();
   return (
     <section className="featured-section-products">
       <div>
@@ -76,7 +81,13 @@ export default function FeaturedSection({
             <h4 style={{ textTransform: "uppercase" }}>
               {otherProductOne.name}
             </h4>
-            <Button buttonNumber="one" buttonText="SEE PRODUCT"></Button>
+            <Button
+              buttonNumber="one"
+              buttonText="SEE PRODUCT"
+              onClickFunc={() => {
+                navigate(`/${slugOne}`);
+              }}
+            ></Button>
           </div>
           <div>
             <img
@@ -97,7 +108,13 @@ export default function FeaturedSection({
             <h4 style={{ textTransform: "uppercase" }}>
               {otherProductTwo.name}
             </h4>
-            <Button buttonNumber="one" buttonText="SEE PRODUCT"></Button>
+            <Button
+              buttonNumber="one"
+              buttonText="SEE PRODUCT"
+              onClickFunc={() => {
+                navigate(`/${slugTwo}`);
+              }}
+            ></Button>
           </div>
           <div>
             <img
@@ -118,7 +135,13 @@ export default function FeaturedSection({
             <h4 style={{ textTransform: "uppercase" }}>
               {otherProductThree.name}
             </h4>
-            <Button buttonNumber="one" buttonText="SEE PRODUCT"></Button>
+            <Button
+              buttonNumber="one"
+              buttonText="SEE PRODUCT"
+              onClickFunc={() => {
+                navigate(`/${slugThree}`);
+              }}
+            ></Button>
           </div>
         </div>
       </div>

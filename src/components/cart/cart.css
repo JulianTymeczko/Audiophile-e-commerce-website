@@ -76,6 +76,15 @@
 .div-cart > div:first-child button img {
   display: none;
 }
+
+.cart-total h6 {
+  opacity: 0.5;
+  font-size: var(--body-size);
+  font-weight: 500;
+}
+.cart-total h4 {
+  font-size: var(--h6-size);
+}
 @media screen and (max-width: 767px) {
   .div-cart {
     width: calc(100% - calc(2 * var(--left-right-body-gutter)));
