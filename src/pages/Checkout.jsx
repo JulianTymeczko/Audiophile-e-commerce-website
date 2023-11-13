@@ -6,6 +6,7 @@ import TextForm from "../components/forms/TextForm";
 import { useEffect, useState } from "react";
 export default function Checkout() {
   const [paymentDetails, setPaymentDetails] = useState("");
+  const [cashDelivery, setcashDelivery] = useState("");
   useEffect(() => {
     if (paymentDetails == "") {
       document
@@ -80,6 +81,7 @@ export default function Checkout() {
                     inputID="one"
                     onClick={() => {
                       setPaymentDetails("");
+                      setcashDelivery("");
                     }}
                   />
                   <RadioForm
@@ -88,6 +90,7 @@ export default function Checkout() {
                     inputID="two"
                     onClick={() => {
                       setPaymentDetails("payment-details-off");
+                      setcashDelivery("cash-on-delivery-on");
                     }}
                   />
                 </div>
@@ -102,6 +105,15 @@ export default function Checkout() {
                 labelText="e-Money PIN"
                 inputPlaceholder="6891"
               ></TextForm>
+              <div className={`cash-on-delivery ${cashDelivery}`}>
+                <img src="/assets/checkout/icon-cash-on-delivery.svg" alt="" />
+                <p>
+                  The ‘Cash on Delivery’ option enables you to pay in cash when
+                  our delivery courier arrives at your residence. Just make sure
+                  your address is correct so that your order will not be
+                  cancelled.
+                </p>
+              </div>
             </div>
           </section>
         </div>

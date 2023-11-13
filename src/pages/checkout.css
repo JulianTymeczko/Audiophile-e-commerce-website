@@ -99,6 +99,27 @@
   letter-spacing: var(--subTitle-letter-spacing);
   margin-bottom: 25px;
 }
+.cash-on-delivery-on {
+  display: flex !important;
+}
+.cash-on-delivery {
+  flex-direction: row;
+  gap: 32px;
+  grid-column: span 2;
+  display: none;
+}
+.cash-on-delivery p {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.5;
+}
+.cash-on-delivery img {
+  width: 48px;
+  height: 48px;
+  align-self: center;
+}
 @media screen and (max-width: 1439px) and (min-width: 768px) {
   .checkout-page {
     flex-direction: column;

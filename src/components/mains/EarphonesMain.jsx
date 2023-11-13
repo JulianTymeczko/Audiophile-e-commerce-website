@@ -26,6 +26,7 @@ export default function EarphonesMain() {
           mobileSrc="\assets\product-yx1-earphones\mobile\image-category-page-preview.jpg"
           desktopSrc="\assets\product-yx1-earphones\desktop\image-category-page-preview.jpg"
           tabletSrc="\assets\product-yx1-earphones\tablet\image-category-page-preview.jpg"
+          seeProductLink="/0"
         ></NormalProduct>
       </div>{" "}
       <div className="mobile-menu home-main-mobile-menu">

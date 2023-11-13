@@ -1,6 +1,8 @@
 import "./homeheader.css";
 import Button from "../buttons/Button";
+import { useNavigate } from "react-router-dom";
 export default function HomeHeader() {
+  let navigate = useNavigate();
   return (
     <>
       <header className="home-header">
@@ -22,7 +24,9 @@ export default function HomeHeader() {
           <Button
             buttonText="SEE PRODUCT"
             buttonNumber="one"
-            //   onClickFunc={onClickFunc}
+            onClickFunc={() => {
+              navigate("/3");
+            }}
           ></Button>
         </div>
         <div className="right-home-header ">

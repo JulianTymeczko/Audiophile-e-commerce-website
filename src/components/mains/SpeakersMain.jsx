@@ -16,6 +16,7 @@ export default function SpeakersMain() {
           mobileSrc="\assets\product-zx9-speaker\mobile\image-category-page-preview.jpg"
           desktopSrc="\assets\product-zx9-speaker\desktop\image-category-page-preview.jpg"
           tabletSrc="\assets\product-zx9-speaker\tablet\image-category-page-preview.jpg"
+          seeProductLink="/5"
         ></NormalProduct>
         <NormalProduct
           newProduct={false}
@@ -28,6 +29,7 @@ export default function SpeakersMain() {
           desktopSrc="\assets\product-zx7-speaker\desktop\image-category-page-preview.jpg"
           tabletSrc="\assets\product-zx7-speaker\tablet\image-category-page-preview.jpg"
           imageLeft={true}
+          seeProductLink="/4"
         ></NormalProduct>
       </div>{" "}
       <div className="mobile-menu home-main-mobile-menu">

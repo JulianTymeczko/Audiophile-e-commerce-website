@@ -1,13 +1,13 @@
 import "./Nav.css";
 import Button from "./components/buttons/Button";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Cart from "./components/cart/Cart";
 import { useLocation } from "react-router-dom";
 function Nav() {
   const [animate, setAnimate] = useState("");
-
+  let navigate = useNavigate();
   const location = useLocation();
 
   const [mask, setMask] = useState("");
@@ -37,7 +37,13 @@ function Nav() {
         location.pathname == "/4" ||
         location.pathname == "/5") && (
         <div id="GO-BACK">
-          <Button buttonNumber="three" buttonText="Go Back"></Button>
+          <Button
+            buttonNumber="three"
+            buttonText="Go Back"
+            onClickFunc={() => {
+              navigate(-1);
+            }}
+          ></Button>
         </div>
       )}
 

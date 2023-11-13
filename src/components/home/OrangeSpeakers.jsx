@@ -1,6 +1,8 @@
 import "./orangespeakers.css";
 import Button from "../buttons/Button";
+import { useNavigate } from "react-router-dom";
 export default function OrangeSpeakers() {
+  let navigate = useNavigate();
   return (
     <div className="orange-speaker">
       <div className="left-orange-div">
@@ -31,7 +33,13 @@ export default function OrangeSpeakers() {
           Upgrade to premium speakers that are <br /> phenomenally built to
           deliver truly remarkable <br /> sound.
         </p>
-        <Button buttonText="SEE PRODUCT" buttonNumber="one"></Button>
+        <Button
+          buttonText="SEE PRODUCT"
+          buttonNumber="one"
+          onClickFunc={() => {
+            navigate("/5");
+          }}
+        ></Button>
       </div>
     </div>
   );

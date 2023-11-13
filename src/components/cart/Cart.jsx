@@ -4,8 +4,10 @@ import CheckoutProductPicture from "../misc/CheckoutProductPicture";
 import CounterForm from "../forms/CounterForm";
 import { useContext } from "react";
 import { CartContext } from "../../App";
+import { useNavigate } from "react-router-dom";
 export default function Cart({ showCart }) {
   const { cart, setCart } = useContext(CartContext);
+  let navigate = useNavigate();
   return (
     <div className={`div-cart ${showCart}`}>
       <div>
@@ -34,7 +36,13 @@ export default function Cart({ showCart }) {
         <h6>TOTAL</h6>
         <h4>{`$12412`}</h4>
       </div>
-      <Button buttonNumber="one" buttonText="CHECKOUT"></Button>
+      <Button
+        buttonNumber="one"
+        buttonText="CHECKOUT"
+        onClickFunc={() => {
+          navigate("/checkout");
+        }}
+      ></Button>
     </div>
   );
 }

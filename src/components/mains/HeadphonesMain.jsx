@@ -16,6 +16,7 @@ export default function HeadphonesMain() {
           mobileSrc="\assets\product-xx99-mark-two-headphones\mobile\image-category-page-preview.jpg"
           desktopSrc="\assets\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"
           tabletSrc="\assets\product-xx99-mark-two-headphones\tablet\image-category-page-preview.jpg"
+          seeProductLink="/3"
         ></NormalProduct>
         <NormalProduct
           newProduct={false}
@@ -27,6 +28,7 @@ export default function HeadphonesMain() {
           desktopSrc="\assets\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"
           tabletSrc="\assets\product-xx99-mark-one-headphones\tablet\image-category-page-preview.jpg"
           imageLeft={true}
+          seeProductLink="/2"
         ></NormalProduct>
         <NormalProduct
           newProduct={false}
@@ -37,6 +39,7 @@ export default function HeadphonesMain() {
           mobileSrc="\assets\product-xx59-headphones\mobile\image-category-page-preview.jpg"
           desktopSrc="\assets\product-xx59-headphones\desktop\image-category-page-preview.jpg"
           tabletSrc="\assets\product-xx59-headphones\tablet\image-category-page-preview.jpg"
+          seeProductLink="/1"
         ></NormalProduct>
       </div>{" "}
       <div className="mobile-menu home-main-mobile-menu">

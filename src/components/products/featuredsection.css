@@ -145,6 +145,18 @@
     flex-direction: row;
     gap: 150px;
   }
+  .product-images img {
+    width: 100%;
+  }
+  .product-images > div:nth-child(2) img {
+    height: 100%;
+  }
+  .you-may-like > div {
+    gap: 10px;
+  }
+  .you-may-like > div > div > img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .featured-section-products > div:first-child {
