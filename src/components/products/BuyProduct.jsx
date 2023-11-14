@@ -14,6 +14,7 @@ export default function BuyProduct({
   newProduct,
   price,
   cartImage,
+  cartName,
 }) {
   let location = useLocation();
   const { cart, setCart } = useContext(CartContext);
@@ -43,6 +44,7 @@ export default function BuyProduct({
                 {
                   price: price,
                   image: cartImage,
+                  name: cartName,
                 },
               ]);
             }}

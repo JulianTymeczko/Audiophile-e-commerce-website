@@ -15,9 +15,15 @@ import Headphones from "./pages/Headphones";
 import Earphones from "./pages/Earphones";
 import Speakers from "./pages/Speakers";
 import Product from "./pages/Product";
+
 export const CartContext = createContext();
 function App() {
-  const [cart, setCart] = useState([]);
+  const initialCart = () => {
+    const startCart = localStorage.getItem("cart");
+    return startCart ? JSON.parse(startCart) : [];
+  };
+
+  const [cart, setCart] = useState(initialCart);
   return (
     <>
       <Router>

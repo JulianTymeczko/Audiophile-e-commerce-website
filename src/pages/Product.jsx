@@ -20,6 +20,7 @@ export default function Product() {
         productTitle={data[id].name}
         productDescription={data[id].description}
         cartImage={`/assets/cart/image-${data[id].slug}.jpg`}
+        cartName={data[id].name}
       ></BuyProduct>
       <FeaturedSection
         features={data[id].features}

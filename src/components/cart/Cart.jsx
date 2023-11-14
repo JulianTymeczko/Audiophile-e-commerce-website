@@ -2,12 +2,15 @@ import "./cart.css";
 import Button from "../buttons/Button";
 import CheckoutProductPicture from "../misc/CheckoutProductPicture";
 import CounterForm from "../forms/CounterForm";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { CartContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 export default function Cart({ showCart }) {
   const { cart, setCart } = useContext(CartContext);
   let navigate = useNavigate();
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
   return (
     <div className={`div-cart ${showCart}`}>
       <div>
