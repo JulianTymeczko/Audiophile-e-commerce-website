@@ -3,10 +3,13 @@ import Button from "../components/buttons/Button";
 import RadioForm from "../components/forms/RadioForm";
 import CounterForm from "../components/forms/CounterForm";
 import TextForm from "../components/forms/TextForm";
-import { useEffect, useState } from "react";
+import RightCheckout from "../components/checkout/RightCheckout";
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "../App";
 export default function Checkout() {
   const [paymentDetails, setPaymentDetails] = useState("");
   const [cashDelivery, setcashDelivery] = useState("");
+  const { cart, setCart } = useContext(CartContext);
   useEffect(() => {
     if (paymentDetails == "") {
       document
@@ -118,14 +121,7 @@ export default function Checkout() {
           </section>
         </div>
       </div>
-      <div className="right-checkout-page">
-        <h2>SUMMARY</h2>
-        <ul className="items-summary"></ul>
-        <div>TOTAL</div>
-        <div>SHIPPING</div>
-        <div>VAT (INCLUDED)</div>
-        <div>GRAND TOTAL</div>
-      </div>
+      <RightCheckout></RightCheckout>
     </section>
   );
 }

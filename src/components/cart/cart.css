@@ -41,7 +41,7 @@
 .div-cart {
   background-color: var(--white);
   width: 377px;
-  height: 488px;
+  min-height: 488px;
   border-radius: 8px;
   position: absolute;
   bottom: -40px;
@@ -50,7 +50,7 @@
   display: none;
   padding: 30px;
   z-index: 5;
-
+  height: max-content;
   flex-direction: column;
   gap: 30px;
 }
@@ -84,6 +84,23 @@
 }
 .cart-total h4 {
   font-size: var(--h6-size);
+}
+.div-cart > div:first-child > h4 {
+  font-size: var(--h6-size);
+  letter-spacing: var(--h6-letter-spacing);
+}
+.div-cart > div:first-child button {
+  color: var(--dark-black);
+  opacity: 0.5;
+  text-decoration: underline;
+  padding: 0px !important;
+}
+.div-cart > div:first-child h6 {
+  font-size: var(--body-size);
+}
+.div-cart > div:first-child button:hover {
+  color: var(--dark-orange);
+  opacity: 1;
 }
 @media screen and (max-width: 767px) {
   .div-cart {

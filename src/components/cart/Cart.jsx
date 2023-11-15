@@ -2,11 +2,18 @@ import "./cart.css";
 import Button from "../buttons/Button";
 import CheckoutProductPicture from "../misc/CheckoutProductPicture";
 import CounterForm from "../forms/CounterForm";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 export default function Cart({ showCart }) {
   const { cart, setCart } = useContext(CartContext);
+
+  function getSetCartQuantity(el) {
+    return (num) => {
+      el.cartQuantity = num;
+      setCart([...cart]);
+    };
+  }
   let navigate = useNavigate();
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -31,7 +38,10 @@ export default function Cart({ showCart }) {
               productName={el.name}
               productPrice={el.price}
             ></CheckoutProductPicture>
-            <CounterForm></CounterForm>
+            <CounterForm
+              quantity={el.cartQuantity}
+              setQuantity={getSetCartQuantity(el)}
+            ></CounterForm>
           </div>
         </>
       ))}

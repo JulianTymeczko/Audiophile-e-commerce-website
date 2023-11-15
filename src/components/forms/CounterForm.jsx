@@ -1,8 +1,6 @@
-import { useState } from "react";
 import "./form.css";
-export default function CounterForm({ quantityProp }) {
-  const [quantity, setQuantity] = useState(1);
 
+export default function CounterForm({ quantity, setQuantity }) {
   return (
     <div className="counter-form">
       <button
