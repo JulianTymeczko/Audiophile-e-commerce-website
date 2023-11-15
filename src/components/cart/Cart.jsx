@@ -14,9 +14,19 @@ export default function Cart({ showCart }) {
       setCart([...cart]);
     };
   }
+  function getTotal() {
+    let sum = 0;
+    cart.forEach((el) => {
+      sum = parseInt(el.price.replace(/,/g, "")) * el.cartQuantity + sum;
+    });
+    return sum.toLocaleString();
+  }
   let navigate = useNavigate();
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
+
+    document.getElementById("cart-total-amount").textContent =
+      "$ " + getTotal();
   }, [cart]);
   return (
     <div className={`div-cart ${showCart}`}>
@@ -47,7 +57,7 @@ export default function Cart({ showCart }) {
       ))}
       <div className="cart-total">
         <h6>TOTAL</h6>
-        <h4>{`$12412`}</h4>
+        <h4 id="cart-total-amount"></h4>
       </div>
       <Button
         buttonNumber="one"

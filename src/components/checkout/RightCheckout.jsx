@@ -1,10 +1,38 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./rightcheckout.css";
 import { CartContext } from "../../App";
 import CheckoutProductPicture from "../misc/CheckoutProductPicture";
 import Button from "../buttons/Button";
 export default function RightCheckout() {
   const { cart } = useContext(CartContext);
+  const VAT = () => {
+    let Vat = parseInt(
+      parseInt(
+        document
+          .getElementById("checkout-total-amount")
+          .textContent.replace(/\$|,/g, ""),
+      ) * 0.2,
+    ).toLocaleString();
+
+    return "$ " + Vat;
+  };
+  useEffect(() => {
+    document.getElementById("checkout-total-amount").textContent =
+      document.getElementById("cart-total-amount")?.textContent;
+
+    document.getElementById("VAT").textContent = VAT();
+    document.getElementById("grand-total-amount").textContent =
+      "$ " +
+      (
+        parseInt(
+          document
+            .getElementById("checkout-total-amount")
+            .textContent.replace(/\$|,/g, ""),
+        ) +
+        50 +
+        parseInt(VAT().replace(/\$|,/g, ""))
+      ).toLocaleString();
+  }, [cart]);
   return (
     <div className="right-checkout">
       <div>
@@ -36,20 +64,23 @@ export default function RightCheckout() {
       <div style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
         <div className="cart-total right-check">
           <h6>TOTAL</h6>
-          <h4>{`$12412`}</h4>
+          <h4 id="checkout-total-amount"></h4>
         </div>
         <div className="cart-total right-check">
           <h6>SHIPPING</h6>
-          <h4>{`$12412`}</h4>
+          <h4>$ 50</h4>
         </div>
         <div className="cart-total right-check">
           <h6>VAT (INCLUDED)</h6>
-          <h4>{`$12412`}</h4>
+          <h4 id="VAT"></h4>
         </div>
       </div>
       <div className="cart-total right-check">
         <h6>GRAND TOTAL</h6>
-        <h4 style={{ color: "rgb(216, 125, 74)" }}>{`$12412`}</h4>
+        <h4
+          style={{ color: "rgb(216, 125, 74)" }}
+          id="grand-total-amount"
+        >{`$12412`}</h4>
       </div>
 
       <Button

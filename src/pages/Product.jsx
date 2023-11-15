@@ -12,7 +12,7 @@ export default function Product() {
   return (
     <main className="product-page">
       <BuyProduct
-        price={data[id].price}
+        price={data[id].price.toLocaleString()}
         newProduct={data[id].new}
         desktopSrc={data[id].image.desktop}
         tabletSrc={data[id].image.tablet}
@@ -20,7 +20,7 @@ export default function Product() {
         productTitle={data[id].name}
         productDescription={data[id].description}
         cartImage={`/assets/cart/image-${data[id].slug}.jpg`}
-        cartName={data[id].name}
+        cartName={data[id].cartName}
       ></BuyProduct>
       <FeaturedSection
         features={data[id].features}
