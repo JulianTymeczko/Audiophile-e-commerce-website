@@ -90,8 +90,7 @@ export default function RightCheckout() {
         buttonText="CONTINUE & PAY"
         onClickFunc={() => {
           if (pay) {
-            setBlankForm("1");
-            console.log("hey");
+            setBlankForm(Math.random() * Math.random());
           }
         }}
       ></Button>
