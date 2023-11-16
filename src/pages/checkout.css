@@ -124,6 +124,7 @@
   .checkout-page {
     flex-direction: column;
     padding-top: 100px;
+    gap: 40px;
   }
   .left-checkout-page {
     padding: 50px 25px;
@@ -150,6 +151,7 @@
   .checkout-page {
     flex-direction: column;
     padding-top: 65px;
+    gap: 40px;
   }
   .left-checkout-page {
     padding: 50px 25px;

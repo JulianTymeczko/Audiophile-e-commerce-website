@@ -27,7 +27,10 @@ function eMoneyPINTest(inputValue) {
   const eMoneyPINPattern = /^\d{4}$/;
   return eMoneyPINPattern.test(inputValue);
 }
-
+function CityCountry(inputValue) {
+  const CityCountryPattern = /\b[A-Z][a-z]*\b/;
+  return CityCountryPattern.test(inputValue);
+}
 export default function formTests(typeOfTest, inputValue) {
   if (typeOfTest == "Name") {
     return nameTest(inputValue);
@@ -40,9 +43,9 @@ export default function formTests(typeOfTest, inputValue) {
   } else if (typeOfTest == "ZIP Code") {
     return zipCodeTest(inputValue);
   } else if (typeOfTest == "City") {
-    return nameTest(inputValue);
+    return CityCountry(inputValue);
   } else if (typeOfTest == "Country") {
-    return nameTest(inputValue);
+    return CityCountry(inputValue);
   } else if (typeOfTest == "e-Money Number") {
     return eMoneyNumberTest(inputValue);
   } else if (typeOfTest == "e-Money PIN") {

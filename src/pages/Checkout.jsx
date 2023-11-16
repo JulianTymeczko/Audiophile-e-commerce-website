@@ -5,10 +5,10 @@ import CounterForm from "../components/forms/CounterForm";
 import TextForm from "../components/forms/TextForm";
 import RightCheckout from "../components/checkout/RightCheckout";
 import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../App";
+import { CartContext, CashDelivery } from "../App";
 export default function Checkout() {
   const [paymentDetails, setPaymentDetails] = useState("");
-  const [cashDelivery, setcashDelivery] = useState("");
+  const { cashDelivery, setcashDelivery } = useContext(CashDelivery);
   const { cart, setCart } = useContext(CartContext);
   useEffect(() => {
     if (paymentDetails == "") {
@@ -107,6 +107,7 @@ export default function Checkout() {
                 paymentDetails={paymentDetails}
                 labelText="e-Money PIN"
                 inputPlaceholder="6891"
+                id="abc"
               ></TextForm>
               <div className={`cash-on-delivery ${cashDelivery}`}>
                 <img src="/assets/checkout/icon-cash-on-delivery.svg" alt="" />
