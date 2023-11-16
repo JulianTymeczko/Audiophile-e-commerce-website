@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import "./form.css";
 import formTests from "../../scripts/formTests";
-import { CashDelivery, PayContext } from "../../App";
+import { BlankForm, CashDelivery, PayContext } from "../../App";
 export default function TextForm({
   inputPlaceholder,
   labelText,
@@ -10,6 +10,7 @@ export default function TextForm({
 }) {
   const { cashDelivery } = useContext(CashDelivery);
   const { setPay } = useContext(PayContext);
+  const { blankForm } = useContext(BlankForm);
   const [value, setValue] = useState("");
   const [textError, setTextError] = useState("");
   const checkForms = () => {
@@ -79,7 +80,11 @@ export default function TextForm({
   useEffect(() => {
     checkForms();
   }, [value, textError, cashDelivery]);
-
+  useEffect(() => {
+    if (blankForm !== "") {
+      setValue("");
+    }
+  }, [blankForm]);
   return (
     <form className={`text-form ${textError} ${paymentDetails}`} id={id}>
       <div>

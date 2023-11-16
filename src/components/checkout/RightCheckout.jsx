@@ -1,11 +1,12 @@
 import { useContext, useEffect } from "react";
 import "./rightcheckout.css";
-import { CartContext, PayContext } from "../../App";
+import { BlankForm, CartContext, PayContext } from "../../App";
 import CheckoutProductPicture from "../misc/CheckoutProductPicture";
 import Button from "../buttons/Button";
 export default function RightCheckout() {
   const { cart } = useContext(CartContext);
   const { pay } = useContext(PayContext);
+  const { setBlankForm } = useContext(BlankForm);
   const VAT = () => {
     let Vat = parseInt(
       parseInt(
@@ -89,6 +90,7 @@ export default function RightCheckout() {
         buttonText="CONTINUE & PAY"
         onClickFunc={() => {
           if (pay) {
+            setBlankForm("1");
             console.log("hey");
           }
         }}
