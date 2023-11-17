@@ -3,18 +3,24 @@ import { BlankForm, CartContext, GrandTotal } from "../../App";
 import Button from "../buttons/Button";
 import "./modal.css";
 import CheckoutProductPicture from "../misc/CheckoutProductPicture";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 export default function Modal() {
   const { cart } = useContext(CartContext);
-  const { blankForm } = useContext(BlankForm);
+  const { blankForm, setBlankForm } = useContext(BlankForm);
   const { grandTotal } = useContext(GrandTotal);
   const [items, setItems] = useState(false);
   let navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     if (blankForm !== "") {
       document.getElementById("thank-you-order").showModal();
+    } else if (blankForm === "") {
+      document.getElementById("thank-you-order").close();
     }
   }, [blankForm]);
+  useEffect(() => {
+    setBlankForm("");
+  }, [location]);
   return (
     <dialog
       id="thank-you-order"
