@@ -103,6 +103,11 @@
   height: max-content;
 }
 @media screen and (max-width: 767px) {
+  #thank-you-order {
+    transform: translateX(-50%) translateY(-25%) !important;
+    gap: 25px !important;
+    padding: 40px !important;
+  }
   #thank-you-order .black-grey-div {
     flex-direction: column;
   }
