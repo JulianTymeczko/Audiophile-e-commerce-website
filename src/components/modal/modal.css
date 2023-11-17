@@ -1,0 +1,109 @@
+:root {
+  /* colors */
+  --dark-orange: rgb(216, 125, 74);
+  --light-orange: rgb(251, 175, 133);
+  --black: rgb(16, 16, 16);
+  --dark-black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --dark-grey: rgb(241, 241, 241);
+  --light-grey: rgb(250, 250, 250);
+
+  /* Typography */
+
+  --h1-size: 56px;
+  --h1-line-height: 58px;
+  --h1-letter-spacing: 2px;
+  --h2-size: 40px;
+  --h2-line-height: 44px;
+  --h2-letter-spacing: 1.5px;
+  --h3-size: 32px;
+  --h3-line-height: 36px;
+  --h3-letter-spacing: 1.15px;
+  --h4-size: 28px;
+  --h4-line-height: 38px;
+  --h4-letter-spacing: 2px;
+  --h5-size: 24px;
+  --h5-line-height: 33px;
+  --h5-letter-spacing: 1.7px;
+  --h6-size: 18px;
+  --h6-line-height: 24px;
+  --h6-letter-spacing: 1.3px;
+  --overline-size: 14px;
+  --overline-line-height: 19px;
+  --overline-letter-spacing: 10px;
+  --subTitle-size: 13px;
+  --subTitle-line-height: 25px;
+  --subTitle-letter-spacing: 1px;
+  --body-size: 15px;
+  --body-line-height: 25px;
+  --left-right-body-gutter: 10%;
+}
+#thank-you-order::backdrop {
+  background-color: rgb(0, 0, 0, 0.6);
+}
+#thank-you-order > h4 {
+  font-size: var(--h3-size);
+  letter-spacing: var(--h3-letter-spacing);
+  line-height: var(--h3-line-height);
+}
+#thank-you-order p {
+  opacity: 0.5;
+  font-size: var(--body-size);
+}
+.grey-square,
+.black-square {
+  padding: 30px 20px 30px 30px;
+}
+.grey-square {
+  background-color: var(--dark-grey);
+  flex-basis: 60%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.grey-square > button {
+  border-top: 1px solid rgb(0, 0, 0, 0.08);
+}
+.grey-square > button {
+  padding: 0px;
+  padding-top: 20px;
+}
+.grey-square > button > h6 {
+  opacity: 0.5;
+  font-size: var(--subTitle-size);
+  letter-spacing: var(--subTitle-letter-spacing);
+}
+.grey-square > button:hover {
+  color: var(--dark-orange);
+}
+.grey-square > button img {
+  display: none;
+}
+.black-square {
+  background-color: var(--dark-black);
+  flex-basis: 40%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.black-square h5 {
+  color: var(--white);
+  opacity: 0.5;
+  font-size: var(--body-size);
+  font-weight: 500;
+}
+.black-square h4 {
+  color: var(--white);
+  font-size: var(--h6-size);
+  letter-spacing: var(--h6-letter-spacing);
+}
+#thank-you-order .black-grey-div {
+  display: flex;
+  flex-direction: row;
+  min-height: 140px;
+  height: max-content;
+}
+@media screen and (max-width: 767px) {
+  #thank-you-order .black-grey-div {
+    flex-direction: column;
+  }
+}

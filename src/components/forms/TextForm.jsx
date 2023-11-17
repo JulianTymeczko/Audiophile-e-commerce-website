@@ -1,13 +1,14 @@
 import { useEffect, useState, useContext } from "react";
 import "./form.css";
 import formTests from "../../scripts/formTests";
-import { BlankForm, CashDelivery, PayContext } from "../../App";
+import { BlankForm, CartContext, CashDelivery, PayContext } from "../../App";
 export default function TextForm({
   inputPlaceholder,
   labelText,
   id,
   paymentDetails,
 }) {
+  const { cart } = useContext(CartContext);
   const { cashDelivery } = useContext(CashDelivery);
   const { setPay } = useContext(PayContext);
   const { blankForm } = useContext(BlankForm);
@@ -60,10 +61,13 @@ export default function TextForm({
     }
 
     if (
-      (document.querySelectorAll(".text-error").length < 1 && isBlank) ||
+      (document.querySelectorAll(".text-error").length < 1 &&
+        isBlank &&
+        cart.length >= 1) ||
       (cashDelivery === "cash-on-delivery-on" &&
         isBlankNotInclusive &&
-        formNotErr)
+        formNotErr &&
+        cart.length >= 1)
     ) {
       setPay(true);
     } else {

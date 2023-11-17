@@ -1,12 +1,13 @@
 import { useContext, useEffect } from "react";
 import "./rightcheckout.css";
-import { BlankForm, CartContext, PayContext } from "../../App";
+import { BlankForm, CartContext, GrandTotal, PayContext } from "../../App";
 import CheckoutProductPicture from "../misc/CheckoutProductPicture";
 import Button from "../buttons/Button";
 export default function RightCheckout() {
   const { cart } = useContext(CartContext);
   const { pay } = useContext(PayContext);
   const { setBlankForm } = useContext(BlankForm);
+  const { setGrandTotal, grandTotal } = useContext(GrandTotal);
   const VAT = () => {
     let Vat = parseInt(
       parseInt(
@@ -34,6 +35,7 @@ export default function RightCheckout() {
         50 +
         parseInt(VAT().replace(/\$|,/g, ""))
       ).toLocaleString();
+    setGrandTotal(document.getElementById("grand-total-amount").textContent);
   }, [cart]);
   return (
     <div className="right-checkout">
