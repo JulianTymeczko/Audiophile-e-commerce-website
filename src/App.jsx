@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
 import Error from "./pages/Error";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
