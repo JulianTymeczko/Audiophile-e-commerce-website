@@ -53,7 +53,7 @@ export default function Modal() {
         >
           {items ? (
             <>
-              {cart.map((el) => (
+              {cart?.map((el) => (
                 <>
                   <div
                     style={{
@@ -64,12 +64,12 @@ export default function Modal() {
                     }}
                   >
                     <CheckoutProductPicture
-                      productImage={el.image}
-                      productName={el.name}
-                      productPrice={el.price}
+                      productImage={el?.image}
+                      productName={el?.name}
+                      productPrice={el?.price}
                     ></CheckoutProductPicture>
                     <h5 style={{ opacity: "0.5", fontSize: "15px" }}>
-                      x{el.cartQuantity}
+                      x{el?.cartQuantity}
                     </h5>
                   </div>
                 </>
@@ -84,7 +84,7 @@ export default function Modal() {
             </>
           ) : (
             <>
-              {[cart[0]].map((el) => (
+              {[cart[0]]?.map((el) => (
                 <>
                   <div
                     style={{
@@ -95,12 +95,12 @@ export default function Modal() {
                     }}
                   >
                     <CheckoutProductPicture
-                      productImage={el.image}
-                      productName={el.name}
-                      productPrice={el.price}
+                      productImage={el?.image}
+                      productName={el?.name}
+                      productPrice={el?.price}
                     ></CheckoutProductPicture>
                     <h5 style={{ opacity: "0.5", fontSize: "15px" }}>
-                      x{el.cartQuantity}
+                      x{el?.cartQuantity}
                     </h5>
                   </div>
                 </>

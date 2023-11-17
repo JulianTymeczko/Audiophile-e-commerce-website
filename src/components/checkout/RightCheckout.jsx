@@ -43,7 +43,7 @@ export default function RightCheckout() {
         <h4>SUMMARY</h4>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
-        {cart.map((el) => (
+        {cart?.map((el) => (
           <>
             <div
               style={{
