@@ -13,9 +13,9 @@ export default function SpeakersMain() {
           system that offers truly wireless connectivity -- creating new possibilities for more 
           pleasing and practical audio setups."
           productTitle=" ZX9 SPEAKER"
-          mobileSrc="\assets\product-zx9-speaker\mobile\image-category-page-preview.jpg"
-          desktopSrc="\assets\product-zx9-speaker\desktop\image-category-page-preview.jpg"
-          tabletSrc="\assets\product-zx9-speaker\tablet\image-category-page-preview.jpg"
+          mobileSrc="./assets/product-zx9-speaker/mobile/image-category-page-preview.jpg"
+          desktopSrc="./assets/product-zx9-speaker/desktop/image-category-page-preview.jpg"
+          tabletSrc="./assets/product-zx9-speaker/tablet/image-category-page-preview.jpg"
           seeProductLink="/5"
         ></NormalProduct>
         <NormalProduct
@@ -25,9 +25,9 @@ export default function SpeakersMain() {
           home or studio use.
         "
           productTitle=" ZX7 SPEAKER"
-          mobileSrc="\assets\product-zx7-speaker\mobile\image-category-page-preview.jpg"
-          desktopSrc="\assets\product-zx7-speaker\desktop\image-category-page-preview.jpg"
-          tabletSrc="\assets\product-zx7-speaker\tablet\image-category-page-preview.jpg"
+          mobileSrc="./assets/product-zx7-speaker/mobile/image-category-page-preview.jpg"
+          desktopSrc="./assets/product-zx7-speaker/desktop/image-category-page-preview.jpg"
+          tabletSrc="./assets/product-zx7-speaker/tablet/image-category-page-preview.jpg"
           imageLeft={true}
           seeProductLink="/4"
         ></NormalProduct>
@@ -36,7 +36,7 @@ export default function SpeakersMain() {
         <div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(41).svg"
+              src="./assets/home/desktop/image-removebg-preview(41).svg"
               alt=""
               className="mobile-menu-img "
             />
@@ -50,7 +50,7 @@ export default function SpeakersMain() {
           </div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(38).svg"
+              src="./assets/home/desktop/image-removebg-preview(38).svg"
               alt=""
               className="mobile-menu-img "
             />
@@ -64,7 +64,7 @@ export default function SpeakersMain() {
           </div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
+              src="./assets/home/desktop/image-removebg-preview(42).svg"
               alt=""
               className="mobile-menu-img"
             />

@@ -23,9 +23,9 @@ export default function EarphonesMain() {
           experience with bespoke dynamic drivers from the new YX1 Wireless Earphones.
           Enjoy incredible high-fidelity sound even in noisy environments with its
           active noise cancellation feature."
-          mobileSrc="\assets\product-yx1-earphones\mobile\image-category-page-preview.jpg"
-          desktopSrc="\assets\product-yx1-earphones\desktop\image-category-page-preview.jpg"
-          tabletSrc="\assets\product-yx1-earphones\tablet\image-category-page-preview.jpg"
+          mobileSrc="./assets/product-yx1-earphones/mobile/image-category-page-preview.jpg"
+          desktopSrc="./assets/product-yx1-earphones/desktop/image-category-page-preview.jpg"
+          tabletSrc="./assets/product-yx1-earphones/tablet/image-category-page-preview.jpg"
           seeProductLink="/0"
         ></NormalProduct>
       </div>{" "}
@@ -33,7 +33,7 @@ export default function EarphonesMain() {
         <div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(41).svg"
+              src="./assets/home/desktop/image-removebg-preview(41).svg"
               alt=""
               className="mobile-menu-img "
             />
@@ -47,7 +47,7 @@ export default function EarphonesMain() {
           </div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(38).svg"
+              src="./assets/home/desktop/image-removebg-preview(38).svg"
               alt=""
               className="mobile-menu-img "
             />
@@ -61,7 +61,7 @@ export default function EarphonesMain() {
           </div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
+              src="./assets/home/desktop/image-removebg-preview(42).svg"
               alt=""
               className="mobile-menu-img"
             />

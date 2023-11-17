@@ -45,7 +45,7 @@ export default function Product() {
         <div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(41).svg"
+              src="./assets/home/desktop/image-removebg-preview(41).svg"
               alt=""
               className="mobile-menu-img "
             />
@@ -59,7 +59,7 @@ export default function Product() {
           </div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(38).svg"
+              src="./assets/home/desktop/image-removebg-preview(38).svg"
               alt=""
               className="mobile-menu-img "
             />
@@ -73,7 +73,7 @@ export default function Product() {
           </div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
+              src="./assets/home/desktop/image-removebg-preview(42).svg"
               alt=""
               className="mobile-menu-img"
             />

@@ -31,19 +31,19 @@ export default function HomeHeader() {
         </div>
         <div className="right-home-header ">
           <img
-            src="/assets/home/desktop/header-headphones.svg"
+            src="./assets/home/desktop/header-headphones.svg"
             alt=""
             className="desktop-image"
           />
         </div>
       </header>
       <img
-        src="\assets\home\tablet\image-header.jpg"
+        src="./assets/home/tablet/image-header.jpg"
         alt=""
         className="tablet-image mask-header-img"
       />
       <img
-        src="\assets\home\mobile\image-header.jpg"
+        src="./assets/home/mobile/image-header.jpg"
         alt=""
         className="mobile-image mask-header-img"
       />

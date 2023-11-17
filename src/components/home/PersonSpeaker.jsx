@@ -3,12 +3,12 @@ export default function PersonSpeaker() {
   return (
     <div className="person-speaker">
       <img
-        src="\assets\shared\tablet\image-best-gear.jpg"
+        src="./assets/shared/tablet/image-best-gear.jpg"
         alt=""
         className="tablet-image"
       />
       <img
-        src="\assets\shared\mobile\image-best-gear.jpg"
+        src="./assets/shared/mobile/image-best-gear.jpg"
         alt=""
         className="mobile-image"
       />
@@ -26,7 +26,7 @@ export default function PersonSpeaker() {
         </p>
       </div>
       <img
-        src="\assets\shared\desktop\image-best-gear.jpg"
+        src="./assets/shared/desktop/image-best-gear.jpg"
         alt=""
         className="desktop-image"
       />

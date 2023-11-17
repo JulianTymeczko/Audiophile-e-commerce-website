@@ -38,7 +38,7 @@ export default function Modal() {
       }}
     >
       <img
-        src="\assets\checkout\icon-order-confirmation.svg"
+        src="./assets/checkout/icon-order-confirmation.svg"
         alt=""
         style={{ width: "64px", height: "64px" }}
       />

@@ -13,9 +13,9 @@ export default function HeadphonesMain() {
   headphone experience by reproducing the balanced depth and precision of studio-quality sound."
           productTitle=" XX99 Mark II
   Headphones"
-          mobileSrc="\assets\product-xx99-mark-two-headphones\mobile\image-category-page-preview.jpg"
-          desktopSrc="\assets\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"
-          tabletSrc="\assets\product-xx99-mark-two-headphones\tablet\image-category-page-preview.jpg"
+          mobileSrc="./assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg"
+          desktopSrc="./assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
+          tabletSrc="./assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg"
           seeProductLink="/3"
         ></NormalProduct>
         <NormalProduct
@@ -24,9 +24,9 @@ export default function HeadphonesMain() {
           and accurate audio reproduction for audiophiles, mixing engineers, and music
           aficionados alike in studios and on the go."
           productTitle=" XX99 Mark I Headphones"
-          mobileSrc="\assets\product-xx99-mark-one-headphones\mobile\image-category-page-preview.jpg"
-          desktopSrc="\assets\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"
-          tabletSrc="\assets\product-xx99-mark-one-headphones\tablet\image-category-page-preview.jpg"
+          mobileSrc="./assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg"
+          desktopSrc="./assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+          tabletSrc="./assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg"
           imageLeft={true}
           seeProductLink="/2"
         ></NormalProduct>
@@ -36,9 +36,9 @@ export default function HeadphonesMain() {
           specific tastes with the XX59 headphones. The stylish yet durable versatile
           wireless headset is a brilliant companion at home or on the move."
           productTitle=" XX59 Headphones"
-          mobileSrc="\assets\product-xx59-headphones\mobile\image-category-page-preview.jpg"
-          desktopSrc="\assets\product-xx59-headphones\desktop\image-category-page-preview.jpg"
-          tabletSrc="\assets\product-xx59-headphones\tablet\image-category-page-preview.jpg"
+          mobileSrc="./assets/product-xx59-headphones/mobile/image-category-page-preview.jpg"
+          desktopSrc="./assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+          tabletSrc="./assets/product-xx59-headphones/tablet/image-category-page-preview.jpg"
           seeProductLink="/1"
         ></NormalProduct>
       </div>{" "}
@@ -46,7 +46,7 @@ export default function HeadphonesMain() {
         <div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(41).svg"
+              src="./assets/home/desktop/image-removebg-preview(41).svg"
               alt=""
               className="mobile-menu-img "
             />
@@ -60,7 +60,7 @@ export default function HeadphonesMain() {
           </div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(38).svg"
+              src="./assets/home/desktop/image-removebg-preview(38).svg"
               alt=""
               className="mobile-menu-img "
             />
@@ -74,7 +74,7 @@ export default function HeadphonesMain() {
           </div>
           <div className="item-types">
             <img
-              src="\assets\home\desktop\image-removebg-preview(42).svg"
+              src="./assets/home/desktop/image-removebg-preview(42).svg"
               alt=""
               className="mobile-menu-img"
             />

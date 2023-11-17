@@ -7,17 +7,17 @@ export default function OrangeSpeakers() {
     <div className="orange-speaker">
       <div className="left-orange-div">
         <img
-          src="\assets\home\desktop\image-speaker-zx9.png"
+          src="./assets/home/desktop/image-speaker-zx9.png"
           alt="image of a speaker"
           className="desktop-image"
         />
         <img
-          src="\assets\home\tablet\image-speaker-zx9.png"
+          src="./assets/home/tablet/image-speaker-zx9.png"
           alt=""
           className="tablet-image"
         />
         <img
-          src="\assets\home\mobile\image-speaker-zx9.png"
+          src="./assets/home/mobile/image-speaker-zx9.png"
           alt=""
           className="mobile-image"
         />

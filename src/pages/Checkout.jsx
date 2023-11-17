@@ -117,7 +117,7 @@ export default function Checkout() {
                 ></TextForm>
                 <div className={`cash-on-delivery ${cashDelivery}`}>
                   <img
-                    src="/assets/checkout/icon-cash-on-delivery.svg"
+                    src="./assets/checkout/icon-cash-on-delivery.svg"
                     alt=""
                   />
                   <p>

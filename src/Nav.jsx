@@ -65,10 +65,10 @@ function Nav() {
             }
           }}
         >
-          <img src="/assets/shared/tablet/icon-hamburger.svg" alt="" />
+          <img src="./assets/shared/tablet/icon-hamburger.svg" alt="" />
         </button>
         <Link to="/" className="logo">
-          <img src="/assets/shared/desktop/logo.svg" alt="" />
+          <img src="./assets/shared/desktop/logo.svg" alt="" />
         </Link>
 
         <div className="nav-middle">
@@ -92,13 +92,13 @@ function Nav() {
             }
           }}
         >
-          <img src="/assets/shared/desktop/icon-cart.svg" alt="" />
+          <img src="./assets/shared/desktop/icon-cart.svg" alt="" />
         </button>
         <div className={`mobile-menu ${animate}`}>
           <div>
             <div className="item-types">
               <img
-                src="\assets\shared\tablet\headp.svg"
+                src="./assets/shared/tablet/headp.svg"
                 alt=""
                 className="mobile-menu-img"
               />
@@ -111,7 +111,7 @@ function Nav() {
             </div>
             <div className="item-types">
               <img
-                src="\assets\shared\tablet\awfdawd.svg"
+                src="./assets/shared/tablet/awfdawd.svg"
                 alt=""
                 className="mobile-menu-img"
               />
@@ -124,7 +124,7 @@ function Nav() {
             </div>
             <div className="item-types">
               <img
-                src="\assets\shared\tablet\image-removebg-preview(42).png"
+                src="./assets/shared/tablet/image-removebg-preview(42).png"
                 alt=""
                 className="mobile-menu-img"
               />

@@ -8,7 +8,7 @@ function Footer() {
           <div className="orange-line"></div>
           <div>
             <Link style={{ width: "max-content" }} to="/">
-              <img src="/assets/shared/desktop/logo.svg" alt="" />
+              <img src="./assets/shared/desktop/logo.svg" alt="" />
             </Link>
             <div className="footer-links hidden-desk">
               {" "}
