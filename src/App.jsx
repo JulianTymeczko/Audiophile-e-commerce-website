@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
-
+import Error from "./pages/Error";
 import {
   BrowserRouter as Router,
   Routes,
@@ -114,6 +114,7 @@ function App() {
                       path="/zx9-speaker"
                       element={<Navigate to="/5" />}
                     ></Route>
+                    <Route path="*" element={<Error />}></Route>
                   </Routes>
                   <Footer></Footer>
                 </CartContext.Provider>
