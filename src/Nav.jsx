@@ -26,7 +26,17 @@ function Nav() {
       document.getElementById("root").style.height = "auto";
     }
   }, [cartMask, mask]);
-
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+    document.getElementById("root").style.overflow = "auto";
+    document.body.style.height = "auto";
+    document.getElementById("root").style.height = "auto";
+    setShowCart("");
+    setCartMask("");
+    setMask("");
+    setAnimate("");
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <>
       {(location.pathname == "/checkout" ||
