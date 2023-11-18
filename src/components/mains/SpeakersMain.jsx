@@ -5,7 +5,15 @@ import PersonSpeaker from "../home/PersonSpeaker";
 export default function SpeakersMain() {
   return (
     <main className="home-main">
-      <div className="home-main-second-section">
+      <div
+        className="home-main-second-section"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "100px",
+          marginBottom: "50px",
+        }}
+      >
         {" "}
         <NormalProduct
           newProduct={true}

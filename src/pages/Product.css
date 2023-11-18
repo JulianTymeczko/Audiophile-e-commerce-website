@@ -43,6 +43,10 @@
   padding: 150px var(--left-right-body-gutter) 100px
     var(--left-right-body-gutter);
 }
+.product-page .person-speaker {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
 @media screen and (max-width: 1439px) and (min-width: 768px) {
   .product-page {
     padding-top: 100px;

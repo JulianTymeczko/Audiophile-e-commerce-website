@@ -15,7 +15,10 @@ export default function EarphonesMain() {
 
   return (
     <main className="home-main">
-      <div className="home-main-second-section earphones-page">
+      <div
+        className="home-main-second-section earphones-page"
+        style={{ marginBottom: "50px" }}
+      >
         {" "}
         <NormalProduct
           newProduct={true}
