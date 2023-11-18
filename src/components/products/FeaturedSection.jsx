@@ -85,7 +85,17 @@ export default function FeaturedSection({
               buttonNumber="one"
               buttonText="SEE PRODUCT"
               onClickFunc={() => {
-                navigate(`/${slugOne}`);
+                slugOne === "/yx1-earphones"
+                  ? navigate("/0")
+                  : slugOne === "/xx59-headphones"
+                  ? navigate("/1")
+                  : slugOne === "/xx99-mark-one-headphoness"
+                  ? navigate("/2")
+                  : slugOne === "/xx99-mark-two-headphones"
+                  ? navigate("/3")
+                  : slugOne === "/zx7-speaker"
+                  ? navigate("/4")
+                  : navigate("/5");
               }}
             ></Button>
           </div>
@@ -112,7 +122,17 @@ export default function FeaturedSection({
               buttonNumber="one"
               buttonText="SEE PRODUCT"
               onClickFunc={() => {
-                navigate(`/${slugTwo}`);
+                slugTwo === "/yx1-earphones"
+                  ? navigate("/0")
+                  : slugTwo === "/xx59-headphones"
+                  ? navigate("/1")
+                  : slugTwo === "/xx99-mark-one-headphoness"
+                  ? navigate("/2")
+                  : slugTwo === "/xx99-mark-two-headphones"
+                  ? navigate("/3")
+                  : slugTwo === "/zx7-speaker"
+                  ? navigate("/4")
+                  : navigate("/5");
               }}
             ></Button>
           </div>
@@ -139,7 +159,17 @@ export default function FeaturedSection({
               buttonNumber="one"
               buttonText="SEE PRODUCT"
               onClickFunc={() => {
-                navigate(`/${slugThree}`);
+                slugThree === "/yx1-earphones"
+                  ? navigate("/0")
+                  : slugThree === "/xx59-headphones"
+                  ? navigate("/1")
+                  : slugThree === "/xx99-mark-one-headphoness"
+                  ? navigate("/2")
+                  : slugThree === "/xx99-mark-two-headphones"
+                  ? navigate("/3")
+                  : slugThree === "/zx7-speaker"
+                  ? navigate("/4")
+                  : navigate("/5");
               }}
             ></Button>
           </div>

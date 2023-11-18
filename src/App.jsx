@@ -90,31 +90,6 @@ function App() {
                         </>
                       }
                     ></Route>
-                    <Route
-                      path="/yx1-earphones"
-                      element={<Navigate to="/0" />}
-                    ></Route>
-                    <Route
-                      path="/xx59-headphones"
-                      element={<Navigate to="/1" />}
-                    ></Route>
-                    <Route
-                      path="/xx99-mark-one-headphones"
-                      element={<Navigate to="/2" />}
-                    ></Route>
-                    <Route
-                      path="/xx99-mark-two-headphones"
-                      element={<Navigate to="/3" />}
-                    ></Route>
-                    <Route
-                      path="/zx7-speaker"
-                      element={<Navigate to="/4" />}
-                    ></Route>
-                    <Route
-                      path="/zx9-speaker"
-                      element={<Navigate to="/5" />}
-                    ></Route>
-                    <Route path="*" element={<Error />}></Route>
                   </Routes>
                   <Footer></Footer>
                 </CartContext.Provider>
