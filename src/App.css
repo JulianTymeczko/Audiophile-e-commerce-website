@@ -38,6 +38,21 @@
   --body-line-height: 25px;
   --left-right-body-gutter: 10%;
 }
+@media screen and (max-width: 767px) {
+  .home-main-second-section.item-too {
+    margin-bottom: 0px !important;
+    gap: 0px !important;
+  }
+  .home-main-second-section.item-too > div:first-child {
+    margin-top: 0px;
+  }
+  .home-main-second-section.item-too ~ .person-speaker {
+    margin-top: 0px !important;
+  }
+  .home-main.also-item {
+    padding-top: 50px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 999px) {
   :root {
     --left-right-body-gutter: 6% !important ;

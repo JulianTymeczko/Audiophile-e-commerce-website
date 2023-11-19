@@ -49,6 +49,7 @@
 #thank-you-order p {
   opacity: 0.5;
   font-size: var(--body-size);
+  line-height: var(--body-line-height);
 }
 .grey-square,
 .black-square {
@@ -110,5 +111,10 @@
   }
   #thank-you-order .black-grey-div {
     flex-direction: column;
+  }
+  #thank-you-order > h4 {
+    font-size: var(--h5-size);
+    line-height: 28px;
+    letter-spacing: var(--h5-letter-spacing);
   }
 }

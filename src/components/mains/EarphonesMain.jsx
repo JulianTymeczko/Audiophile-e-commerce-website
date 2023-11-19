@@ -14,9 +14,9 @@ export default function EarphonesMain() {
   }, []);
 
   return (
-    <main className="home-main">
+    <main className="home-main also-item">
       <div
-        className="home-main-second-section earphones-page"
+        className="home-main-second-section earphones-page item-too"
         style={{ marginBottom: "50px" }}
       >
         {" "}

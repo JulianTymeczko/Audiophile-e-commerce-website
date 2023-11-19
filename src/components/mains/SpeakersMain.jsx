@@ -4,9 +4,9 @@ import NormalProduct from "../products/NormalProduct";
 import PersonSpeaker from "../home/PersonSpeaker";
 export default function SpeakersMain() {
   return (
-    <main className="home-main">
+    <main className="home-main also-item">
       <div
-        className="home-main-second-section"
+        className="home-main-second-section item-too"
         style={{
           display: "flex",
           flexDirection: "column",
