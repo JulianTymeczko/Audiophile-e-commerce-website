@@ -106,7 +106,6 @@
 }
 @media screen and (max-width: 767px) {
   :root {
-    --left-right-body-gutter: 6% !important;
     --left-padding-mobile: 6% !important;
   }
   .top-black-speaker {

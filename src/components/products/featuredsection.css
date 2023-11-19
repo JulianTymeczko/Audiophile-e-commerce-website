@@ -198,6 +198,9 @@
   .product-images img {
     width: 100%;
   }
+  .product-images > div:nth-child(2) img {
+    max-height: 500px;
+  }
   .featured-section-products {
     gap: 100px;
   }
