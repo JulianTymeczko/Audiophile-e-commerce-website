@@ -2,14 +2,15 @@ import "./Nav.css";
 import Button from "./components/buttons/Button";
 
 import { Link, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Cart from "./components/cart/Cart";
 import { useLocation } from "react-router-dom";
+import { CashDelivery } from "./App";
 function Nav() {
   const [animate, setAnimate] = useState("");
   let navigate = useNavigate();
   const location = useLocation();
-
+  const { setcashDelivery } = useContext(CashDelivery);
   const [mask, setMask] = useState("");
   const [showCart, setShowCart] = useState("");
   const [cartMask, setCartMask] = useState("");
@@ -36,6 +37,7 @@ function Nav() {
     setMask("");
     setAnimate("");
     window.scrollTo(0, 0);
+    setcashDelivery("");
   }, [location]);
   return (
     <>

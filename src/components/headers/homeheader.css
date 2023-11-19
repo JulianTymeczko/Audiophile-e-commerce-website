@@ -89,10 +89,6 @@
   left: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-  :root {
-    --left-right-body-gutter: 6% !important;
-  }
-
   .home-header {
     justify-content: center;
     height: 593px;
